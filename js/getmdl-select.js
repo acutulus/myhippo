@@ -67,7 +67,13 @@
             var dropdowns = document.querySelectorAll(selector);
             [].forEach.call(dropdowns, function (i) {
                 getmdlSelect.addEventListeners(i);
-                i.querySelector('.getmdl-select-container').style.width = i.querySelector('.mdl-menu').clientWidth + 'px';
+                var menuWidth  = i.querySelector('.mdl-menu').clientWidth;
+                var labelWidth = i.querySelector('.mdl-textfield__label > span').offsetWidth + 20;
+                i.querySelector('.getmdl-select-container').style.width = Math.max(menuWidth, labelWidth) + 'px';
+                i.querySelector('.mdl-menu__container').style.minWidth = Math.max(menuWidth, labelWidth) + 'px';
+                i.querySelector('.mdl-menu__container').style.maxWidth = Math.max(menuWidth, labelWidth) + 'px';
+                i.querySelector('.mdl-menu').style.minWidth = Math.max(menuWidth, labelWidth) + 'px';
+                i.querySelector('.mdl-menu').style.maxWidth = Math.max(menuWidth, labelWidth) + 'px';
             });
         }
     };

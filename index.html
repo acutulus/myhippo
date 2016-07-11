@@ -40,7 +40,7 @@
 						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
 						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="yr-built" placeholder="YYYY" data-ng-model="publicDataData.form.yearBuilt">
 						    <label class="mdl-textfield__label" for="yr-built">YEAR BUILT</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
+						    <span class="mdl-textfield__error"> </span>
 						  </div>
 					</div>
 					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">  
@@ -49,14 +49,14 @@
 						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
 						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sq-ft" placeholder="sq ft" data-ng-model="publicDataData.form.squareFootage">
 						    <label class="mdl-textfield__label" for="sq-ft">SQUARE FOOTAGE</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
+						    <span class="mdl-textfield__error"></span>
 						  </div>
 				  	</div>
 				  	<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-									 	<span><i class="material-icons filled">done</i></span>
+							<span><i class="material-icons filled">done</i></span>
 				            <input class="mdl-textfield__input" type="text" id="units" placeholder="Select" readonly data-ng-model="publicDataData.form.familyUnits">
-				            <label for="units" class="mdl-textfield__label">FAMILY UNITS</label>
+				            <label for="units" class="mdl-textfield__label"><span>FAMILY UNITS <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
 				           	<div class="getmdl-select-container">
 					            <label for="units">
 					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
@@ -74,15 +74,15 @@
 						 			<span><i class="material-icons filled">done</i></span>
 						 			<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
 						    	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="stories" placeholder="0" data-ng-model="publicDataData.form.stories">
-						    	<label class="mdl-textfield__label" for="stories">STORIES</label>
-						    	<span class="mdl-textfield__error">Input is not a number!</span>
+						    	<label class="mdl-textfield__label" for="stories"><span>STORIES <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+						    	<span class="mdl-textfield__error"></span>
 					  	</div>
 				  	</div>
 					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-									 	<span><i class="material-icons filled">done</i></span>
-				            <input class="mdl-textfield__input" type="text" id="pool" placeholder="Select" readonly>
-				            <label for="pool" class="mdl-textfield__label">SWIMMING POOL</label>
+							<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="pool" placeholder="Select" readonly data-ng-model="publicDataData.form.pool">
+				            <label for="pool" class="mdl-textfield__label"><span>SWIMMING POOL</span></label>
 				            <div class="getmdl-select-container">
 					            <label for="pool">
 					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
@@ -96,63 +96,75 @@
 			        </div>
 			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="electric" placeholder="Select" readonly tabIndex="-1">
-				            <label for="electric">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="electric" class="mdl-textfield__label">ELECTRIC UPDATED</label>
-				            <ul for="electric" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
+				        <span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="electric" placeholder="Select" readonly data-ng-model="publicDataData.form.electric">
+				            <label for="electric" class="mdl-textfield__label"><span>ELECTRIC UPDATED <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+				            <div class="getmdl-select-container">
+					            <label for="electric">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="electric" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">YES</li>
+					                <li class="mdl-menu__item">NO</li>
+					            </ul>
+				            </div>
 				        </div>
 			        </div>
 			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="hvac" placeholder="Select" readonly tabIndex="-1">
-				            <label for="hvac">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="hvac" class="mdl-textfield__label">HEATING/HVAC UPDATED</label>
-				            <ul for="hvac" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
+				        	<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="hvac" placeholder="Select" readonly data-ng-model="publicDataData.form.hvac">
+				            <label for="hvac" class="mdl-textfield__label"><span>HEATING/HVAC UPDATED</span></label>
+				            <div class="getmdl-select-container">
+					            <label for="hvac">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>				            
+					            <ul for="hvac" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">YES</li>
+					                <li class="mdl-menu__item">NO</li>
+					            </ul>
+				            </div>
 				        </div>
 			        </div>
 			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="plumbing" placeholder="Select" readonly tabIndex="-1">
-				            <label for="plumbing">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="plumbing" class="mdl-textfield__label">PLUMBING UPDATED</label>
-				            <ul for="plumbing" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
+				        <span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="plumbing" placeholder="Select" readonly data-ng-model="publicDataData.form.plumbing">
+				            <label for="plumbing" class="mdl-textfield__label"><span>PLUMBING UPDATED</span></label>
+							<div class="getmdl-select-container">
+					            <label for="plumbing">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>				            
+					            <ul for="plumbing" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">YES</li>
+					                <li class="mdl-menu__item">NO</li>
+					            </ul>
+				            </div>
 				        </div>
 			        </div>
 					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="roof" placeholder="Select" readonly tabIndex="-1">
-				            <label for="roof">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="roof" class="mdl-textfield__label">ROOF TYPE</label>
-				            <ul for="roof" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
+						<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="roof" placeholder="Select" readonly data-ng-model="publicDataData.form.roof">
+				            <label for="roof" class="mdl-textfield__label"><span>ROOF TYPE <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+				            <div class="getmdl-select-container">
+					            <label for="roof">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>			            
+					            <ul for="roof" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">YES</li>
+					                <li class="mdl-menu__item">NO</li>
+					            </ul>
+				            </div>
 				        </div>
 				    </div>
 				    <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
 				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
 						 	<span><i class="material-icons filled">done</i></span>
 						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="roof-maintained" placeholder="YYYY">
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="roof-maintained" placeholder="YYYY" data-ng-model="publicDataData.form.roofMaintained">
 						    <label class="mdl-textfield__label" for="roof-maintained">ROOF LAST MAINTAINED</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
+						    <span class="mdl-textfield__error">&nbsp;</span>
 					  	</div>
 				  	</div>
 				</form>

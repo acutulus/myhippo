@@ -15,7 +15,7 @@ angular.module("myHippoPublicData", [])
                 count++;
             }
         }
-        return $scope.publicDataForm.$valid && count === 12;
+        return $scope.publicDataForm.$valid && count === 10;
     };
 
 });

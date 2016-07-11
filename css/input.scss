@@ -79,17 +79,19 @@ body:after {
     clear:both;
 }
 
+.mdl-textfield {
+	width: 166px;
+}
+
 .mdl-textfield.is-focused .mdl-textfield__input {
 	padding: 4px 0;
 	color: #328DF9;
 }
 
-.mdl-textfield.is-dirty:not(.is-invalid) .filled {
-  display:block;
-}
-
+.mdl-textfield.is-dirty:not(.is-invalid) .filled,
 .mdl-textfield.is-invalid .wrong-info {
-	display: block;
+  display:block;
+  margin-top: 6px;
 }
 
 .wrong-info {
@@ -135,7 +137,11 @@ body:after {
 	left: -10px !important;
 }
 
+.getmdl-select-container {
+}
+
 .mdl-menu__outline {
+	width:100% !important;
 }
 
 .getmdl-select.getmdl-select-visible .mdl-textfield__label {
@@ -192,7 +198,15 @@ nav {
 	h2 {
 		font-family: 'MarkOT-Medium', sans-serif;
 		font-size: 50px;
+		line-height: 1.1;
+		letter-spacing: -2px;
 	}
+}
+
+.info-icon {
+	width: 14px;
+    position: relative;
+    bottom: 3px;
 }
 
 .continue-btn {
@@ -226,7 +240,7 @@ nav {
 
 .mdl-icon-toggle__label.material-icons {
 	float: right;
-	margin-top: -30px;
+	margin-top: -35px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 840px) {

@@ -5,19 +5,16 @@
   src: url("../fonts/MarkOT.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT.woff") format("woff"), url("../fonts/MarkOT.ttf") format("truetype"), url("../fonts/MarkOT.svg#MarkOT") format("svg"); }
-
 @font-face {
   font-family: 'MarkOT-Bold';
   src: url("../fonts/MarkOT-Bold.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Bold.woff") format("woff"), url("../fonts/MarkOT-Bold.ttf") format("truetype"), url("../fonts/MarkOT-Bold.svg#MarkOT-Bold") format("svg"); }
-
 @font-face {
   font-family: 'MarkOT-Medium';
   src: url("../fonts/MarkOT-Medium.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Medium.woff") format("woff"), url("../fonts/MarkOT-Medium.ttf") format("truetype"), url("../fonts/MarkOT-Medium.svg#MarkOT-Medium") format("svg"); }
-
 ::-webkit-input-placeholder,
 .mdl-textfield__input {
   font-family: 'MarkOT', sans-serif;
@@ -127,15 +124,17 @@ body.percent-100:after {
 .row:after {
   clear: both; }
 
+.mdl-textfield {
+  width: 166px; }
+
 .mdl-textfield.is-focused .mdl-textfield__input {
   padding: 4px 0;
   color: #328DF9; }
 
-.mdl-textfield.is-dirty:not(.is-invalid) .filled {
-  display: block; }
-
+.mdl-textfield.is-dirty:not(.is-invalid) .filled,
 .mdl-textfield.is-invalid .wrong-info {
-  display: block; }
+  display: block;
+  margin-top: 6px; }
 
 .wrong-info {
   display: none;
@@ -171,6 +170,9 @@ body.percent-100:after {
 .mdl-menu__container {
   top: -2px !important;
   left: -10px !important; }
+
+.mdl-menu__outline {
+  width: 100% !important; }
 
 .getmdl-select.getmdl-select-visible .mdl-textfield__label {
   z-index: 1000; }
@@ -214,7 +216,14 @@ nav {
   margin-bottom: 70px; }
   .heading h2 {
     font-family: 'MarkOT-Medium', sans-serif;
-    font-size: 50px; }
+    font-size: 50px;
+    line-height: 1.1;
+    letter-spacing: -2px; }
+
+.info-icon {
+  width: 14px;
+  position: relative;
+  bottom: 3px; }
 
 .continue-btn {
   text-align: center;
@@ -242,20 +251,19 @@ nav {
 
 .mdl-icon-toggle__label.material-icons {
   float: right;
-  margin-top: -30px; }
+  margin-top: -35px; }
 
 @media screen and (max-width: 1024px) and (min-width: 840px) {
   .heading h2 {
     font-size: 45px; } }
-
 @media screen and (max-width: 840px) and (min-width: 768px) {
   .heading h2 {
     font-size: 40px; } }
-
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .heading h2 {
     font-size: 30px; } }
-
 @media screen and (max-width: 600px) and (min-width: 375px) {
   .heading h2 {
     font-size: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
