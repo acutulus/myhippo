@@ -1,0 +1,393 @@
+/**
+ * Gridpak Beta SCSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @simplygoodwork
+ */
+/* Reusable column setup */
+.col {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* 1. 4 Column Grid 0px - 374px
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 374px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 278px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5px;
+    margin-left: -5px; }
+  .col-xs-1 {
+    width: 72px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-1 {
+    margin-left: 72px; }
+  .col-xs-2 {
+    width: 144px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-2 {
+    margin-left: 144px; }
+  .col-xs-3 {
+    width: 216px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-3 {
+    margin-left: 216px; }
+  .col-xs-4 {
+    width: 288px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-4 {
+    margin-left: 288px; } }
+
+/* 2. 4 Column Grid 374px - 600px
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 310px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5px;
+    margin-left: -5px; }
+  .col-xs-1 {
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-1 {
+    margin-left: 80px; }
+  .col-xs-2 {
+    width: 160px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-2 {
+    margin-left: 160px; }
+  .col-xs-3 {
+    width: 240px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-3 {
+    margin-left: 240px; }
+  .col-xs-4 {
+    width: 320px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-xs-offset-4 {
+    margin-left: 320px; } }
+
+/* 2. 4 Column Grid 600px - 768px 
+    ------------------------------------------------------------*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 517px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5.5px;
+    margin-left: -5.5px; }
+  .col-sm-1 {
+    width: 66px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-1 {
+    margin-left: 66px; }
+  .col-sm-2 {
+    width: 132px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-2 {
+    margin-left: 132px; }
+  .col-sm-3 {
+    width: 198px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-3 {
+    margin-left: 198px; }
+  .col-sm-4 {
+    width: 264px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-4 {
+    margin-left: 264px; }
+  .col-sm-5 {
+    width: 330px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-5 {
+    margin-left: 330px; }
+  .col-sm-6 {
+    width: 396px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-6 {
+    margin-left: 396px; }
+  .col-sm-7 {
+    width: 462px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-7 {
+    margin-left: 462px; }
+  .col-sm-8 {
+    width: 528px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-8 {
+    margin-left: 528px; } }
+
+/* 2. 4 Column Grid 768px - 840px 
+    -------------------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 840px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 685px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5.5px;
+    margin-left: -5.5px; }
+  .col-sm-1 {
+    width: 87px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-1 {
+    margin-left: 87px; }
+  .col-sm-2 {
+    width: 174px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-2 {
+    margin-left: 174px; }
+  .col-sm-3 {
+    width: 261px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-3 {
+    margin-left: 261px; }
+  .col-sm-4 {
+    width: 348px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-4 {
+    margin-left: 348px; }
+  .col-sm-5 {
+    width: 435px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-5 {
+    margin-left: 435px; }
+  .col-sm-6 {
+    width: 522px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-6 {
+    margin-left: 522px; }
+  .col-sm-7 {
+    width: 609px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-7 {
+    margin-left: 609px; }
+  .col-sm-8 {
+    width: 696px;
+    padding-left: 5.5px;
+    padding-right: 5.5px; }
+  .col-sm-offset-8 {
+    margin-left: 696px; } }
+
+/* 3. 8 Column Grid 840px - 1024px
+
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 840px) and (max-width: 1024px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 750px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5px;
+    margin-left: -5px; }
+  .col-md-1 {
+    width: 95px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-1 {
+    margin-left: 95px; }
+  .col-md-2 {
+    width: 190px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-2 {
+    margin-left: 190px; }
+  .col-md-3 {
+    width: 285px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-3 {
+    margin-left: 285px; }
+  .col-md-4 {
+    width: 380px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-4 {
+    margin-left: 380px; }
+  .col-md-5 {
+    width: 475px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-5 {
+    margin-left: 475px; }
+  .col-md-6 {
+    width: 570px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-6 {
+    margin-left: 570px; }
+  .col-md-7 {
+    width: 665px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-7 {
+    margin-left: 665px; }
+  .col-md-8 {
+    width: 760px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-8 {
+    margin-left: 760px; } }
+
+/* 3. 8 Column Grid 1024px - 1366px
+
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 942px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5px;
+    margin-left: -5px; }
+  .col-md-1 {
+    width: 119px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-1 {
+    margin-left: 119px; }
+  .col-md-2 {
+    width: 238px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-2 {
+    margin-left: 238px; }
+  .col-md-3 {
+    width: 357px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-3 {
+    margin-left: 357px; }
+  .col-md-4 {
+    width: 476px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-4 {
+    margin-left: 476px; }
+  .col-md-5 {
+    width: 595px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-5 {
+    margin-left: 595px; }
+  .col-md-6 {
+    width: 714px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-6 {
+    margin-left: 714px; }
+  .col-md-7 {
+    width: 833px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-7 {
+    margin-left: 833px; }
+  .col-md-8 {
+    width: 952px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-md-offset-8 {
+    margin-left: 952px; } }
+
+/* 4. 10 Column Grid 1366px - Infinity
+    ----------------------------------------------------------------------------- */
+@media screen and (min-width: 1366px) {
+  /* --- Gridpak variables ---*/
+  .container {
+    width: 1210px;
+    margin: 0 auto; }
+  .row {
+    margin-right: -5px;
+    margin-left: -5px; }
+  .col-lg-1 {
+    width: 122px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-1 {
+    margin-left: 122px; }
+  .col-lg-2 {
+    width: 244px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-2 {
+    margin-left: 244px; }
+  .col-lg-3 {
+    width: 366px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-3 {
+    margin-left: 366px; }
+  .col-lg-4 {
+    width: 488px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-4 {
+    margin-left: 488px; }
+  .col-lg-5 {
+    width: 610px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-5 {
+    margin-left: 610px; }
+  .col-lg-6 {
+    width: 732px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-6 {
+    margin-left: 732px; }
+  .col-lg-7 {
+    width: 854px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-7 {
+    margin-left: 854px; }
+  .col-lg-8 {
+    width: 976px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-8 {
+    margin-left: 976px; }
+  .col-lg-9 {
+    width: 1098px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-9 {
+    margin-left: 1098px; }
+  .col-lg-10 {
+    width: 1220px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .col-lg-offset-10 {
+    margin-left: 1220px; } }

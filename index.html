@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myhippo</title>
+	<!-- MDL -->
+	<link rel="stylesheet" href="css/material.min.css">
+	<!-- Google Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--getmdl-select-->
+	<link rel="stylesheet" href="css/getmdl-select.css">
+	<!-- Gridpak -->
+	<link rel="stylesheet" href="css/gridpak.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-ng-app="myHippoPublicData" data-ng-controller="PublicDataController" data-ng-class="{'percent-50':publicDataData.submitted}">
+	<div class="container">
+		<div class="row">
+			<nav class="col-lg-10">
+				<div class="nav-wrap col col-lg-1 col-md-1">
+					<div class="logo">
+						<img src="img/logo.svg" alt="Hippo Logo">
+					</div>
+					<div class="chat col-lg-offset-9 col-md-offset-7 col-sm-offset-7 col-xs-offset-3">
+						<span>CHAT</span>
+						<img src="img/chat.svg" alt="Chat">
+					</div>
+				</div>
+			</nav>
+			<div class="heading col-lg-10 col-md-8 col-sm-8 col-cs-4">
+				<h2>Can you confirm this information?</h2>
+			</div>
+			<div class="input-wrap col-lg-offset-1 col-sm-offset-1 col-lg-8 col-md-8 col-sm-8 col-xs-4">
+				<form name="publicDataForm" action="#" class="row">
+					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="yr-built" placeholder="YYYY" data-ng-model="publicDataData.form.yearBuilt">
+						    <label class="mdl-textfield__label" for="yr-built">YEAR BUILT</label>
+						    <span class="mdl-textfield__error">Input is not a number!</span>
+						  </div>
+					</div>
+					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">  
+						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sq-ft" placeholder="sq ft" data-ng-model="publicDataData.form.squareFootage">
+						    <label class="mdl-textfield__label" for="sq-ft">SQUARE FOOTAGE</label>
+						    <span class="mdl-textfield__error">Input is not a number!</span>
+						  </div>
+				  	</div>
+				  	<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+									 	<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="units" placeholder="Select" readonly data-ng-model="publicDataData.form.familyUnits">
+				            <label for="units" class="mdl-textfield__label">FAMILY UNITS</label>
+				           	<div class="getmdl-select-container">
+					            <label for="units">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="units" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">Germany</li>
+					                <li class="mdl-menu__item">Belarus</li>
+					                <li class="mdl-menu__item">Russia</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 			<span><i class="material-icons filled">done</i></span>
+						 			<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="stories" placeholder="0" data-ng-model="publicDataData.form.stories">
+						    	<label class="mdl-textfield__label" for="stories">STORIES</label>
+						    	<span class="mdl-textfield__error">Input is not a number!</span>
+					  	</div>
+				  	</div>
+					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+									 	<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="pool" placeholder="Select" readonly>
+				            <label for="pool" class="mdl-textfield__label">SWIMMING POOL</label>
+				            <div class="getmdl-select-container">
+					            <label for="pool">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="pool" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">YES</li>
+					                <li class="mdl-menu__item">NO</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+				            <input class="mdl-textfield__input" type="text" id="electric" placeholder="Select" readonly tabIndex="-1">
+				            <label for="electric">
+				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+				            </label>
+				            <label for="electric" class="mdl-textfield__label">ELECTRIC UPDATED</label>
+				            <ul for="electric" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				                <li class="mdl-menu__item">YES</li>
+				                <li class="mdl-menu__item">NO</li>
+				            </ul>
+				        </div>
+			        </div>
+			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+				            <input class="mdl-textfield__input" type="text" id="hvac" placeholder="Select" readonly tabIndex="-1">
+				            <label for="hvac">
+				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+				            </label>
+				            <label for="hvac" class="mdl-textfield__label">HEATING/HVAC UPDATED</label>
+				            <ul for="hvac" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				                <li class="mdl-menu__item">YES</li>
+				                <li class="mdl-menu__item">NO</li>
+				            </ul>
+				        </div>
+			        </div>
+			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+				            <input class="mdl-textfield__input" type="text" id="plumbing" placeholder="Select" readonly tabIndex="-1">
+				            <label for="plumbing">
+				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+				            </label>
+				            <label for="plumbing" class="mdl-textfield__label">PLUMBING UPDATED</label>
+				            <ul for="plumbing" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				                <li class="mdl-menu__item">YES</li>
+				                <li class="mdl-menu__item">NO</li>
+				            </ul>
+				        </div>
+			        </div>
+					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+				            <input class="mdl-textfield__input" type="text" id="roof" placeholder="Select" readonly tabIndex="-1">
+				            <label for="roof">
+				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+				            </label>
+				            <label for="roof" class="mdl-textfield__label">ROOF TYPE</label>
+				            <ul for="roof" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+				                <li class="mdl-menu__item">YES</li>
+				                <li class="mdl-menu__item">NO</li>
+				            </ul>
+				        </div>
+				    </div>
+				    <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="roof-maintained" placeholder="YYYY">
+						    <label class="mdl-textfield__label" for="roof-maintained">ROOF LAST MAINTAINED</label>
+						    <span class="mdl-textfield__error">Input is not a number!</span>
+					  	</div>
+				  	</div>
+				</form>
+				
+			</div>
+		</div>
+		<div class="continue-btn" data-ng-disabled="!isValid()" disabled="true">
+					<button class="" data-ng-click="printModel();">
+						Continue
+					</button>
+				</div>
+	</div>
+
+	<!-- MDL JS -->
+	<script src="js/material.min.js" type="text/javascript"></script>
+	<!--getmdl-select-->
+  <script src="js/getmdl-select.js" type="text/javascript"></script>
+	<!-- Angular JS -->
+	<script src="js/angular.js" type="text/javascript"></script>
+	<!-- Custom JS -->
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+/**
+ * Gridpak Beta SCSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @simplygoodwork
+ */
+
+/* Reusable column setup */
+
+.col {
+    position: relative;
+    min-height: 1px;
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+@mixin col($num, $col_width, $gutter_px) {
+    width: (($col_width+$gutter_px) * $num);
+    padding-left: ($gutter_px / 2);
+    padding-right: ($gutter_px / 2);
+}
+
+@mixin col-offset($num, $col_width, $gutter_px) {
+    margin-left:(($col_width+$gutter_px) * $num);
+}
+
+
+    /* 1. 4 Column Grid 0px - 374px
+    ----------------------------------------------------------------------------- */
+
+	@media screen and (min-width: 0px) and (max-width: 374px) {
+
+        /* --- Gridpak variables ---*/
+        $gutter_px: 10px;
+        $col_width: 62px;
+        $col_num: 4;
+        $col_css_size: 'xs';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }
+    }
+
+    /* 2. 4 Column Grid 374px - 600px
+    ----------------------------------------------------------------------------- */
+
+	@media screen and (min-width: 375px) and (max-width: 600px) {
+        /* --- Gridpak variables ---*/
+        $gutter_px: 10px;
+        $col_width: 70px;
+        $col_num: 4;
+        $col_css_size: 'xs';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }
+
+    }
+
+    /* 2. 4 Column Grid 600px - 768px 
+    ------------------------------------------------------------*/
+
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+        /* --- Gridpak variables ---*/
+        $gutter_px: 11px;
+        $col_width: 55px;
+        $col_num: 8;
+        $col_css_size: 'sm';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }
+
+    }
+
+
+    /* 2. 4 Column Grid 768px - 840px 
+    -------------------------------------------------------------*/
+
+    @media screen and (min-width: 768px) and (max-width: 840px) {
+        /* --- Gridpak variables ---*/
+        $gutter_px: 11px;
+        $col_width: 76px;
+        $col_num: 8;
+        $col_css_size: 'sm';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }
+
+    }
+
+
+
+
+
+    /* 3. 8 Column Grid 840px - 1024px
+
+    ----------------------------------------------------------------------------- */
+
+	@media screen and (min-width: 840px) and (max-width: 1024px) {
+
+        /* --- Gridpak variables ---*/
+        $gutter_px: 10px;
+        $col_width: 85px;
+        $col_num: 8;
+        $col_css_size: 'md';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }        
+
+    }
+
+
+    /* 3. 8 Column Grid 1024px - 1366px
+
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+        /* --- Gridpak variables ---*/
+        $gutter_px: 10px;
+        $col_width: 109px;
+        $col_num: 8;
+        $col_css_size: 'md';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }        
+
+    }
+
+
+
+    /* 4. 10 Column Grid 1366px - Infinity
+    ----------------------------------------------------------------------------- */
+
+	@media screen and (min-width: 1366px) {
+         /* --- Gridpak variables ---*/
+        $gutter_px: 10px;
+        $col_width: 112px;
+        $col_num: 10;
+        $col_css_size: 'lg';
+
+        .container {
+            width: ($col_num * $col_width) + ($gutter_px * ($col_num - 1));
+            margin:0 auto;
+        }
+
+        .row {
+            margin-right:-($gutter_px / 2);
+            margin-left:-($gutter_px / 2);
+        }
+        
+
+        @for $i from 1 through $col_num {
+            .col-#{$col_css_size}-#{$i} {
+                @include col($i, $col_width, $gutter_px);
+            }
+            .col-#{$col_css_size}-offset-#{$i} {
+                @include col-offset($i, $col_width, $gutter_px);
+            }
+        }
+    }
+

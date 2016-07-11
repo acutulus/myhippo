@@ -1,0 +1,262 @@
+/* 				Fonts
+------------------------------------------- */
+@font-face {
+	font-family: 'MarkOT';
+	src: url('../fonts/MarkOT.eot'); /* IE9 Compact Modes */
+	src: url('../fonts/MarkOT.woff') format('woff'),
+		 url('../fonts/MarkOT.ttf') format('truetype'),
+		 url('../fonts/MarkOT.svg#MarkOT') format('svg') /* Legacy iOS */;
+}
+
+@font-face {
+	font-family: 'MarkOT-Bold';
+	src: url('../fonts/MarkOT-Bold.eot'); /* IE9 Compact Modes */
+	src: url('../fonts/MarkOT-Bold.woff') format('woff'),
+		 url('../fonts/MarkOT-Bold.ttf') format('truetype'),
+		 url('../fonts/MarkOT-Bold.svg#MarkOT-Bold') format('svg') /* Legacy iOS */;
+}
+@font-face {
+	font-family: 'MarkOT-Medium';
+	src: url('../fonts/MarkOT-Medium.eot'); /* IE9 Compact Modes */
+	src: url('../fonts/MarkOT-Medium.woff') format('woff'),
+		 url('../fonts/MarkOT-Medium.ttf') format('truetype'),
+		 url('../fonts/MarkOT-Medium.svg#MarkOT-Medium') format('svg') /* Legacy iOS */;
+}
+
+::-webkit-input-placeholder,
+.mdl-textfield__input {
+	font-family: 'MarkOT', sans-serif;
+	font-size: 24px;
+}
+
+/* 				General Styles
+------------------------------------------- */
+html, body {
+	min-height: 100%;
+	height:auto;
+}
+
+body {
+	background-image: url(../img/city-illustration.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+}
+
+body:before,
+body:after {
+  height: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transition:width 0.5s;
+}
+body:before {
+  left: 0;
+  width:30%;
+  background: #7C5BF4;
+}
+body:after {
+  right: 0;
+  width:70%;
+  background: #D9D9D9;
+}
+@for $i from 0 through 10 {
+	body.percent-#{$i*10}:before {
+ 	 width:($i*10%);
+	}
+	body.percent-#{$i*10}:after {
+  	width:(100%-($i*10%));
+	}
+}
+
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+.row:after {
+    clear:both;
+}
+
+.mdl-textfield.is-focused .mdl-textfield__input {
+	padding: 4px 0;
+	color: #328DF9;
+}
+
+.mdl-textfield.is-dirty:not(.is-invalid) .filled {
+  display:block;
+}
+
+.mdl-textfield.is-invalid .wrong-info {
+	display: block;
+}
+
+.wrong-info {
+	display: none;
+	position: absolute;
+	right: 0;
+}
+
+.filled {
+	display: none;
+	position: absolute;
+	right: 0;
+	color: #7C5BF4;
+}
+
+.mdl-textfield__label {
+	font-size: 13px !important;
+	letter-spacing: 1.1px;
+	color: #5c6f78 !important;
+}
+
+.mdl-textfield__label:after {
+	background-color: #328DF9 !important;
+}
+
+.is-focused .mdl-textfield__label {
+	color: #328DF9 !important;
+}
+
+.selector {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #5C6F78;
+	border-radius: 0;
+}
+
+/* 				Ed's testing for selects
+------------------------------------------- */
+
+.mdl-menu__container {
+	top: -2px !important;
+	left: -10px !important;
+}
+
+.mdl-menu__outline {
+}
+
+.getmdl-select.getmdl-select-visible .mdl-textfield__label {
+	z-index: 1000;
+}
+
+.getmdl-select .mdl-textfield__label:after {
+	visibility: hidden !important;
+}
+
+.mdl-menu {
+	padding-top: 20px;
+}
+
+.mdl-menu__item {
+  padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+  margin: 10px 0px;
+}
+
+.mdl-menu__item:hover {
+    background-color: #e2effe;
+}
+/* 				Public Data
+------------------------------------------- */
+.container {
+	min-height:600px;
+}
+
+nav {
+	height: 100px;
+
+	.nav-wrap {
+		padding-top: 35px;
+		.logo {
+			position: absolute;
+		}
+		.chat {
+			display: inline;
+			span {
+				padding-right: 5px;
+				color: #247DFF;
+				font-family: 'MarkOT-Bold', sans-serif;
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 70px;
+	h2 {
+		font-family: 'MarkOT-Medium', sans-serif;
+		font-size: 50px;
+	}
+}
+
+.continue-btn {
+	text-align: center;
+	margin-bottom: 45px;
+	margin-top: 45px;
+	button {
+		width: 260px;
+		height: 60px;
+		border: none;
+		font-size: 20px;
+		border-radius: 100px;
+		background-color: #19dd84;
+		text-transform: uppercase;
+		outline: none;
+		line-height: 0.9;
+		letter-spacing: 2.2px;
+		color: #ffffff;
+	}
+}
+.continue-btn[disabled] {
+	button {
+		background-color: #d9d9d9;
+	}
+}
+
+.input-wrap form > div {
+	margin: 10px 0;
+	min-height: 82px;
+}
+
+.mdl-icon-toggle__label.material-icons {
+	float: right;
+	margin-top: -30px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+	.heading {
+		h2 {
+			font-size: 45px;
+		}
+	}
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+	.heading {
+		h2 {
+			font-size: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	.heading {
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) and (min-width: 375px) {
+	.heading {
+		h2 {
+			font-size: 30px;
+		}
+	}
+}
