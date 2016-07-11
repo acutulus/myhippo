@@ -81,6 +81,7 @@ body:after {
 
 .mdl-textfield {
 	width: 166px;
+	margin: 0 34px;
 }
 
 .mdl-textfield.is-focused .mdl-textfield__input {
@@ -108,9 +109,10 @@ body:after {
 }
 
 .mdl-textfield__label {
-	font-size: 13px !important;
+	font-size: 12px !important;
 	letter-spacing: 1.1px;
 	color: #5c6f78 !important;
+	min-width: 170px;
 }
 
 .mdl-textfield__label:after {
@@ -182,6 +184,7 @@ nav {
 		}
 		.chat {
 			display: inline;
+			padding-left: 50px;
 			span {
 				padding-right: 5px;
 				color: #247DFF;
@@ -212,7 +215,7 @@ nav {
 .continue-btn {
 	text-align: center;
 	margin-bottom: 45px;
-	margin-top: 45px;
+	margin-top: 60px;
 	button {
 		width: 260px;
 		height: 60px;
@@ -249,6 +252,10 @@ nav {
 			font-size: 45px;
 		}
 	}
+
+	.mdl-textfield {
+		margin: 0 20px;
+	}
 }
 
 @media screen and (max-width: 840px) and (min-width: 768px) {
@@ -257,13 +264,32 @@ nav {
 			font-size: 40px;
 		}
 	}
+
+	.mdl-textfield {
+		margin: 0 58px;
+		width: 226px;
+	}
+
+	nav .nav-wrap .chat {
+		padding-left: 30px;
+	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 600px) {
 	.heading {
+		margin-bottom: 0;
 		h2 {
-			font-size: 30px;
+			font-size: 35px;
 		}
+	}
+
+	nav .nav-wrap .logo {
+		left: -50px;
+	}
+
+	.mdl-textfield {
+		margin: 0 13px;
+		width: 226px;
 	}
 }
 
@@ -272,5 +298,10 @@ nav {
 		h2 {
 			font-size: 30px;
 		}
+	}
+
+	.mdl-textfield {
+		margin: initial;
+		width: 281px;
 	}
 }

@@ -125,7 +125,8 @@ body.percent-100:after {
   clear: both; }
 
 .mdl-textfield {
-  width: 166px; }
+  width: 166px;
+  margin: 0 34px; }
 
 .mdl-textfield.is-focused .mdl-textfield__input {
   padding: 4px 0;
@@ -148,9 +149,10 @@ body.percent-100:after {
   color: #7C5BF4; }
 
 .mdl-textfield__label {
-  font-size: 13px !important;
+  font-size: 12px !important;
   letter-spacing: 1.1px;
-  color: #5c6f78 !important; }
+  color: #5c6f78 !important;
+  min-width: 170px; }
 
 .mdl-textfield__label:after {
   background-color: #328DF9 !important; }
@@ -204,7 +206,8 @@ nav {
     nav .nav-wrap .logo {
       position: absolute; }
     nav .nav-wrap .chat {
-      display: inline; }
+      display: inline;
+      padding-left: 50px; }
       nav .nav-wrap .chat span {
         padding-right: 5px;
         color: #247DFF;
@@ -228,7 +231,7 @@ nav {
 .continue-btn {
   text-align: center;
   margin-bottom: 45px;
-  margin-top: 45px; }
+  margin-top: 60px; }
   .continue-btn button {
     width: 260px;
     height: 60px;
@@ -255,15 +258,38 @@ nav {
 
 @media screen and (max-width: 1024px) and (min-width: 840px) {
   .heading h2 {
-    font-size: 45px; } }
+    font-size: 45px; }
+
+  .mdl-textfield {
+    margin: 0 20px; } }
 @media screen and (max-width: 840px) and (min-width: 768px) {
   .heading h2 {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .mdl-textfield {
+    margin: 0 58px;
+    width: 226px; }
+
+  nav .nav-wrap .chat {
+    padding-left: 30px; } }
 @media screen and (max-width: 768px) and (min-width: 600px) {
-  .heading h2 {
-    font-size: 30px; } }
+  .heading {
+    margin-bottom: 0; }
+    .heading h2 {
+      font-size: 35px; }
+
+  nav .nav-wrap .logo {
+    left: -50px; }
+
+  .mdl-textfield {
+    margin: 0 13px;
+    width: 226px; } }
 @media screen and (max-width: 600px) and (min-width: 375px) {
   .heading h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .mdl-textfield {
+    margin: initial;
+    width: 281px; } }
 
 /*# sourceMappingURL=style.css.map */
