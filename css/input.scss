@@ -79,9 +79,13 @@ body:after {
     clear:both;
 }
 
+.field-container {
+	padding: 0 34px;
+}
+
 .mdl-textfield {
-	width: 166px;
-	margin: 0 34px;
+	width: auto;
+	margin-bottom: 23px;
 }
 
 .mdl-textfield.is-focused .mdl-textfield__input {
@@ -184,7 +188,7 @@ nav {
 		}
 		.chat {
 			display: inline;
-			padding-left: 50px;
+			float:right;
 			span {
 				padding-right: 5px;
 				color: #247DFF;
@@ -197,7 +201,8 @@ nav {
 
 .heading {
 	text-align: center;
-	margin-bottom: 70px;
+	margin-top: 45px;
+	margin-bottom: 116px;
 	h2 {
 		font-family: 'MarkOT-Medium', sans-serif;
 		font-size: 50px;
@@ -216,6 +221,7 @@ nav {
 	text-align: center;
 	margin-bottom: 45px;
 	margin-top: 60px;
+	float: initial;
 	button {
 		width: 260px;
 		height: 60px;
@@ -237,13 +243,21 @@ nav {
 }
 
 .input-wrap form > div {
-	margin: 10px 0;
 	min-height: 82px;
 }
 
 .mdl-icon-toggle__label.material-icons {
 	float: right;
 	margin-top: -35px;
+}
+
+@media screen and (min-width:1366px) {
+	.heading {
+		margin-top: 17px;
+	}
+	.continue-btn {
+		margin-top: 42px;
+	}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 840px) {
@@ -253,25 +267,37 @@ nav {
 		}
 	}
 
+	.field-container {
+		padding: 0;
+		padding-left: 34px;
+	}
+
 	.mdl-textfield {
-		margin: 0 20px;
+		// margin: 0 20px;
+	}
+	.mdl-icon-toggle__label.material-icons {
+		margin-right: 20px;
 	}
 }
 
 @media screen and (max-width: 840px) and (min-width: 768px) {
 	.heading {
+		margin-bottom: 96px;
 		h2 {
 			font-size: 40px;
 		}
 	}
 
 	.mdl-textfield {
-		margin: 0 58px;
-		width: 226px;
+		margin-bottom: 15px;
 	}
 
-	nav .nav-wrap .chat {
-		padding-left: 30px;
+	.field-container {
+		padding: 0 13px;	
+	}
+
+	.continue-btn {
+		margin-top: 120px;
 	}
 }
 
@@ -283,25 +309,70 @@ nav {
 		}
 	}
 
-	nav .nav-wrap .logo {
-		left: -50px;
+	.field-container {
+		padding: 0 13px;	
 	}
 
-	.mdl-textfield {
-		margin: 0 13px;
-		width: 226px;
-	}
 }
 
-@media screen and (max-width: 600px) and (min-width: 375px) {
+@media screen and (max-width: 600px) {
 	.heading {
+		margin-bottom: 41px;
+		margin-top: 26px;
 		h2 {
-			font-size: 30px;
+			font-size: 24px;
+			line-height: 1.2;
+			letter-spacing: -1px;
 		}
 	}
-
+	.field-container {
+		padding: 0px;	
+	}
 	.mdl-textfield {
-		margin: initial;
-		width: 281px;
+    width: 100%;
+    margin-bottom: 6px;
+	}
+	body:before,
+	body:after {
+  	top: 44px;
+  }
+  .chat img {
+  	color: #87949a;
+  }
+  .chat span {
+  	display:none;
+  }
+  nav {
+  	height: 44px;
+  }
+  nav .nav-wrap {
+  	width:100%;
+  	padding-top:0px;
+  }
+  nav .nav-wrap .logo {
+  	position: relative;
+  	text-align: center;
+    height: 44px;
+    line-height: 44px;
+    img {
+    	height:18px;
+    }
+  }
+  nav .nav-wrap .chat {
+    position: absolute;
+    right: 0px;
+    top: 12px;
+  }
+	.continue-btn {
+	  margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 0px;
+
+		button {
+  		width: 100%;
+			height: 45px;
+			font-size: 12px;
+			letter-spacing: 1.5px;
+		}
 	}
 }

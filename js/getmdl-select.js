@@ -12,37 +12,57 @@
             var input = dropdown.querySelector('input');
             var list = dropdown.querySelectorAll('li');
             var clickOpenEvt = null;
+            var clickCallback;
+            var that = this;
 
             var show = function(evt) {
               dropdown.classList.add("getmdl-select-visible");
 
-              var callback = function (e) {
+              clickCallback = function (e) {
                   // Check to see if the document is processing the same event that
                   // displayed the menu in the first place. If so, do nothing.
                   // Also check to see if the menu is in the process of closing itself, and
                   // do nothing in that case.
                   // Also check if the clicked element is a menu item
                   // if so, do nothing.
-                  if (e !== evt && e !== clickOpenEvt && !this.closing_ && e.target.parentNode !== this.element_) {
+                  console.log(e !== evt, e !== clickOpenEvt, !that.closing_, e.target.parentNode !== that.element_);
+                  if (e !== evt && e !== clickOpenEvt && !that.closing_ && e.target.parentNode !== that.element_) {
+                    clickOpenEvt = null;
                     dropdown.classList.remove("is-focused");
-                    document.removeEventListener('click', callback);
+                    document.removeEventListener('click', clickCallback);
                     setTimeout(function() {
                       dropdown.classList.remove("getmdl-select-visible");
                     }, 250);
                   }
-              }.bind(this);
-              document.addEventListener('click', callback);
+              };
+              document.addEventListener('click',clickCallback);
             };
 
+            /*
             input.onclick = function(evt) {
-              clickOpenEvt = evt;
-              show(evt);
+              var menu = dropdown.querySelector('.mdl-menu');
+              //var open = menu.MaterialMenu.container_.classList.contains(menu.MaterialMenu.CssClasses_.IS_VISIBLE);
+              if (!clickOpenEvt) {
+                clickOpenEvt = evt;
+                show(evt);
+              }
             };
+            */
 
             input.onfocus = function(evt) {
               show(evt);
               var menu = dropdown.querySelector('.mdl-menu');
               menu.MaterialMenu.show();
+            };
+
+            input.onblur = function(evt) {
+              var menu = dropdown.querySelector('.mdl-menu');
+              menu.MaterialMenu.hide();
+              dropdown.classList.remove("is-focused");
+              document.removeEventListener('click', clickCallback);
+              setTimeout(function() {
+                dropdown.classList.remove("getmdl-select-visible");
+              }, 250);
             };
 
             [].forEach.call(list, function (li) {
