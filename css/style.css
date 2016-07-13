@@ -185,6 +185,10 @@ body.percent-100:after {
 .getmdl-select.getmdl-select-visible .mdl-textfield__label {
   z-index: 1000; }
 
+.getmdl-select .mdl-textfield__input {
+  -webkit-user-select: none;
+}
+
 .getmdl-select .mdl-textfield__label:after {
   visibility: hidden !important; }
 
