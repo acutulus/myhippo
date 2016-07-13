@@ -5,16 +5,19 @@
   src: url("../fonts/MarkOT.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT.woff") format("woff"), url("../fonts/MarkOT.ttf") format("truetype"), url("../fonts/MarkOT.svg#MarkOT") format("svg"); }
+
 @font-face {
   font-family: 'MarkOT-Bold';
   src: url("../fonts/MarkOT-Bold.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Bold.woff") format("woff"), url("../fonts/MarkOT-Bold.ttf") format("truetype"), url("../fonts/MarkOT-Bold.svg#MarkOT-Bold") format("svg"); }
+
 @font-face {
   font-family: 'MarkOT-Medium';
   src: url("../fonts/MarkOT-Medium.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Medium.woff") format("woff"), url("../fonts/MarkOT-Medium.ttf") format("truetype"), url("../fonts/MarkOT-Medium.svg#MarkOT-Medium") format("svg"); }
+
 ::-webkit-input-placeholder,
 .mdl-textfield__input {
   font-family: 'MarkOT', sans-serif;
@@ -263,41 +266,38 @@ nav {
 @media screen and (min-width: 1366px) {
   .heading {
     margin-top: 17px; }
-
   .continue-btn {
     margin-top: 42px; } }
+
 @media screen and (max-width: 1024px) and (min-width: 840px) {
   .heading h2 {
     font-size: 45px; }
-
   .field-container {
     padding: 0;
     padding-left: 34px; }
-
   .mdl-icon-toggle__label.material-icons {
     margin-right: 20px; } }
+
 @media screen and (max-width: 840px) and (min-width: 768px) {
   .heading {
     margin-bottom: 96px; }
     .heading h2 {
       font-size: 40px; }
-
   .mdl-textfield {
     margin-bottom: 15px; }
-
   .field-container {
     padding: 0 13px; }
-
   .continue-btn {
     margin-top: 120px; } }
+
 @media screen and (max-width: 768px) and (min-width: 600px) {
   .heading {
     margin-bottom: 0; }
     .heading h2 {
       font-size: 35px; }
-
   .field-container {
     padding: 0 13px; } }
+
 @media screen and (max-width: 600px) {
   .heading {
     margin-bottom: 41px;
@@ -306,31 +306,23 @@ nav {
       font-size: 24px;
       line-height: 1.2;
       letter-spacing: -1px; }
-
   .field-container {
     padding: 0px; }
-
   .mdl-textfield {
     width: 100%;
     margin-bottom: 6px; }
-
   body:before,
   body:after {
     top: 44px; }
-
   .chat img {
     color: #87949a; }
-
   .chat span {
     display: none; }
-
   nav {
     height: 44px; }
-
   nav .nav-wrap {
     width: 100%;
     padding-top: 0px; }
-
   nav .nav-wrap .logo {
     position: relative;
     text-align: center;
@@ -338,12 +330,10 @@ nav {
     line-height: 44px; }
     nav .nav-wrap .logo img {
       height: 18px; }
-
   nav .nav-wrap .chat {
     position: absolute;
     right: 0px;
     top: 12px; }
-
   .continue-btn {
     margin-left: -10px;
     margin-right: -10px;
@@ -353,5 +343,3 @@ nav {
       height: 45px;
       font-size: 12px;
       letter-spacing: 1.5px; } }
-
-/*# sourceMappingURL=style.css.map */
