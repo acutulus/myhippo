@@ -1,3 +1,5 @@
+/* Import Fonts
+-------------------------------------*/
 /* 				Fonts
 ------------------------------------------- */
 @font-face {
@@ -5,24 +7,42 @@
   src: url("../fonts/MarkOT.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT.woff") format("woff"), url("../fonts/MarkOT.ttf") format("truetype"), url("../fonts/MarkOT.svg#MarkOT") format("svg"); }
-
 @font-face {
   font-family: 'MarkOT-Bold';
   src: url("../fonts/MarkOT-Bold.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Bold.woff") format("woff"), url("../fonts/MarkOT-Bold.ttf") format("truetype"), url("../fonts/MarkOT-Bold.svg#MarkOT-Bold") format("svg"); }
-
 @font-face {
   font-family: 'MarkOT-Medium';
   src: url("../fonts/MarkOT-Medium.eot");
   /* IE9 Compact Modes */
   src: url("../fonts/MarkOT-Medium.woff") format("woff"), url("../fonts/MarkOT-Medium.ttf") format("truetype"), url("../fonts/MarkOT-Medium.svg#MarkOT-Medium") format("svg"); }
+@font-face {
+  font-family: 'NittiGrotesk';
+  src: url("../fonts/NittiGrotesk-Normal.otf") format("opentype");
+  /* IE9 Compact Modes */ }
+@font-face {
+  font-family: 'NittiGrotesk-Bold';
+  src: url("../fonts/NittiGrotesk-Bold.otf") format("opentype");
+  /* IE9 Compact Modes */ }
+@font-face {
+  font-family: 'NittiGrotesk-Light';
+  src: url("../fonts/NittiGrotesk-Light.otf") format("opentype");
+  /* IE9 Compact Modes */ }
+@font-face {
+  font-family: 'NittiGrotesk-Medium';
+  src: url("../fonts/NittiGrotesk-Medium.otf") format("opentype");
+  /* IE9 Compact Modes */ }
+label {
+  font-family: 'NittiGrotesk', sans-serif; }
 
 ::-webkit-input-placeholder,
 .mdl-textfield__input {
   font-family: 'MarkOT', sans-serif;
   font-size: 24px; }
 
+/* Import Global Styles
+-------------------------------------*/
 /* 				General Styles
 ------------------------------------------- */
 html, body {
@@ -267,41 +287,158 @@ nav {
   float: right;
   margin-top: -35px; }
 
+.hm-info {
+  max-width: 742px;
+  margin: auto; }
+  .hm-info .mbl-info {
+    display: none; }
+    .hm-info .mbl-info img {
+      width: 14px; }
+  .hm-info .info-icon {
+    padding-left: 19px; }
+    .hm-info .info-icon img {
+      width: 14px; }
+  .hm-info .question,
+  .hm-info .question-full {
+    display: inline-block;
+    vertical-align: middle; }
+    .hm-info .question h4,
+    .hm-info .question-full h4 {
+      font-family: 'MarkOT',sans-serif; }
+  .hm-info .question__wrap {
+    border-bottom: solid 1px #5c6f78; }
+  .hm-info .btm-select {
+    float: initial;
+    position: relative;
+    bottom: 35px;
+    margin-left: 100px; }
+    .hm-info .btm-select .mdl-textfield {
+      margin-bottom: 0;
+      padding-top: 12px;
+      padding-bottom: 0; }
+      .hm-info .btm-select .mdl-textfield .mdl-textfield__input {
+        width: 100%; }
+  .hm-info .sm-input .mdl-textfield {
+    float: right; }
+    .hm-info .sm-input .mdl-textfield .mdl-textfield__input {
+      width: 110px; }
+  .hm-info .toggle {
+    display: inline-block; }
+  .hm-info .field-container {
+    display: inline; }
+  .hm-info .mbl-brdr {
+    display: none; }
+
+/* Import Media Queries
+-------------------------------------*/
+/*      THIS IS THE START OF THE MEDIA QUERIES!!!!!!!
+-------------------------------------------------------- */
 @media screen and (min-width: 1366px) {
   .heading {
     margin-top: 17px; }
-  .continue-btn {
-    margin-top: 42px; } }
 
+  .continue-btn {
+    margin-top: 42px; }
+
+  /* 		Page 1 Sub Page More Home Info
+  ------------------------------------------- */
+  .hm-info {
+    padding: 0 70px; }
+    .hm-info .question__wrap .icon img {
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    .hm-info .question__wrap .question h4 {
+      display: inline;
+      font-family: 'MarkOT', sans-serif;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -0.7px;
+      color: #000000; }
+    .hm-info .question__wrap .field-container .mdl-textfield {
+      padding-top: 40px;
+      margin-left: 20px; }
+    .hm-info .question__wrap .fbr-roof {
+      padding-left: 0;
+      margin-left: -34px; } }
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .field-container .mdl-textfield {
+    margin-bottom: 0; } }
 @media screen and (max-width: 1024px) and (min-width: 840px) {
   .heading h2 {
     font-size: 45px; }
-  .field-container {
-    padding: 0;
-    padding-left: 34px; }
-  .mdl-icon-toggle__label.material-icons {
-    margin-right: 20px; } }
 
+  .mdl-icon-toggle__label.material-icons {
+    margin-right: 20px; }
+
+  .hm-info .field-container,
+  .hm-info .fbr-roof {
+    float: right;
+    padding-right: 0; }
+
+  .fbr-roof {
+    margin-right: 0 !important; }
+
+  .btm-select .mdl-textfield {
+    width: 100%;
+    padding-right: 55px; }
+
+  .question {
+    max-width: 230px; }
+
+  .question-full {
+    display: inline-block;
+    max-width: 340px; }
+
+  .question-full h4,
+  .question h4 {
+    font-size: 20px !important;
+    line-height: 1.2;
+    letter-spacing: -0.6px; } }
 @media screen and (max-width: 840px) and (min-width: 768px) {
   .heading {
     margin-bottom: 96px; }
     .heading h2 {
       font-size: 40px; }
+
+  .hm-info .question-full h4,
+  .hm-info .question h4 {
+    font-size: 20px !important;
+    line-height: 1.2;
+    letter-spacing: -0.6px; }
+
   .mdl-textfield {
     margin-bottom: 15px; }
+
   .field-container {
     padding: 0 13px; }
-  .continue-btn {
-    margin-top: 120px; } }
 
-@media screen and (max-width: 768px) and (min-width: 600px) {
+  .continue-btn {
+    margin-top: 120px; }
+
+  .mr-q-cnt {
+    margin-top: 60px; } }
+@media screen and (max-width: 767px) and (min-width: 600px) {
   .heading {
     margin-bottom: 0; }
     .heading h2 {
       font-size: 35px; }
-  .field-container {
-    padding: 0 13px; } }
 
+  .hm-info .question-full h4,
+  .hm-info .question h4 {
+    font-size: 20px !important;
+    line-height: 1.2;
+    letter-spacing: -0.6px; }
+  .hm-info .question {
+    width: 205px; }
+  .hm-info .question-full {
+    width: 279px; }
+  .hm-info .sm-input .mdl-textfield {
+    float: initial; }
+  .hm-info .btm-select .mdl-textfield {
+    width: 100%; }
+
+  .field-container {
+    padding: 0; } }
 @media screen and (max-width: 600px) {
   .heading {
     margin-bottom: 41px;
@@ -310,23 +447,37 @@ nav {
       font-size: 24px;
       line-height: 1.2;
       letter-spacing: -1px; }
+    .heading h3 {
+      font-family: 'NittiGrotesk-Light',sans-serif;
+      font-size: 15px;
+      line-height: 1.1;
+      text-align: center;
+      color: #5c6f78; }
+
   .field-container {
     padding: 0px; }
+
   .mdl-textfield {
     width: 100%;
     margin-bottom: 6px; }
+
   body:before,
   body:after {
     top: 44px; }
+
   .chat img {
     color: #87949a; }
+
   .chat span {
     display: none; }
+
   nav {
     height: 44px; }
+
   nav .nav-wrap {
     width: 100%;
     padding-top: 0px; }
+
   nav .nav-wrap .logo {
     position: relative;
     text-align: center;
@@ -334,10 +485,12 @@ nav {
     line-height: 44px; }
     nav .nav-wrap .logo img {
       height: 18px; }
+
   nav .nav-wrap .chat {
     position: absolute;
     right: 0px;
     top: 12px; }
+
   .continue-btn {
     margin-left: -10px;
     margin-right: -10px;
@@ -346,4 +499,89 @@ nav {
       width: 100%;
       height: 45px;
       font-size: 12px;
-      letter-spacing: 1.5px; } }
+      letter-spacing: 1.5px; }
+
+  ::-webkit-input-placeholder {
+    font-family: 'MarkOT', sans-serif;
+    font-size: 20px; }
+
+  .hm-info {
+    padding: 0; }
+    .hm-info .icon img {
+      width: 80px;
+      margin-right: 40px;
+      position: relative;
+      left: -20px; }
+    .hm-info .toggle {
+      float: right;
+      margin-right: 20px; }
+    .hm-info .mbl-info {
+      display: inline-block;
+      float: right;
+      margin-top: 22px; }
+    .hm-info .question__wrap .info-icon {
+      display: none; }
+    .hm-info .question__wrap .question h4,
+    .hm-info .question__wrap .question-full h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 20px !important;
+      line-height: 1.2;
+      letter-spacing: -0.6px; }
+    .hm-info .question {
+      width: 190px;
+      margin-bottom: 25px; }
+    .hm-info .question-full {
+      width: 279px; }
+    .hm-info .btm-select {
+      left: 0;
+      bottom: 0;
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0; }
+    .hm-info .sm-input .mdl-textfield {
+      float: initial; }
+      .hm-info .sm-input .mdl-textfield .mdl-textfield__input {
+        width: 100%; }
+
+  .hm-info:last-child {
+    margin-bottom: 45px; }
+
+  .hm-info .question__wrap .field-container {
+    float: initial; }
+    .hm-info .question__wrap .field-container .mdl-textfield {
+      padding-top: 0; }
+    .hm-info .question__wrap .field-container .mdl-textfield__input {
+      font-size: 20px; }
+
+  /* Page 2 Styles
+  ----------------------------------- */
+  .card1 {
+    opacity: 0.75;
+    border-radius: 5px;
+    border: solid 0.5px #87949a; }
+    .card1 img {
+      float: left;
+      padding-bottom: 70px; }
+
+  .house-info .title {
+    font-family: 'MarkOT',sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    color: #328df9; }
+  .house-info .crd-info {
+    font-family: 'NittiGrotesk-Light', sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #5c6f78;
+    padding: 20px 0 20px 20px; }
+  .house-info .usr-prcnt {
+    font-family: 'NittiGrotesk-Bold',sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #5c6f78;
+    opacity: 0.5; } }
+
+/*# sourceMappingURL=style.css.map */

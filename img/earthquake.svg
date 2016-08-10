@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>EarthquakeHouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EarthquakeHouse">
+            <g id="Group">
+                <rect id="Rectangle-32" x="0" y="0" width="100" height="100"></rect>
+                <g id="Earthquake" transform="translate(18.000000, 25.000000)">
+                    <g id="Page-1">
+                        <polyline id="Stroke-1" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round" points="15.1404717 14.4738679 15.1404717 7.48896226 19.360283 7.48896226 19.360283 11.5974528"></polyline>
+                        <polyline id="Stroke-2" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round" points="14.0515094 44.4964151 14.0515094 21.9322642 14.0515094 20.7086792 14.0515094 19.224717 8.76660377 19.224717 31.319434 2.98698113 53.8732075 19.224717 13.4345283 19.224717"></polyline>
+                        <polyline id="Stroke-3" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round" points="48.5880189 19.5435849 48.5936792 38.72 48.5870755 44.4964151"></polyline>
+                        <g id="Group-12" transform="translate(0.000000, 0.474811)">
+                            <path d="M17.2745283,4.55575472 C17.5688679,4.55575472 17.8198113,4.33877358 17.8537736,4.04066038 C17.8632075,3.95386792 17.9301887,3.16707547 17.3292453,2.49537736 C16.8198113,1.92650943 16.0141509,1.63783019 14.9339623,1.63783019 L14.8716981,1.64160377 C14.2037736,1.71235849 13.0915094,1.65764151 12.709434,1.31424528 C12.6283019,1.24160377 12.595283,1.16518868 12.595283,1.05292453 C12.595283,0.730283019 12.3330189,0.468962264 12.0103774,0.468962264 C11.6877358,0.468962264 11.4254717,0.730283019 11.4254717,1.05292453 C11.4254717,1.49820755 11.6,1.88971698 11.9283019,2.185 C12.8113208,2.97745283 14.6264151,2.83971698 14.9632075,2.80669811 C15.6613208,2.81141509 16.1745283,2.96896226 16.4471698,3.26330189 C16.7150943,3.55292453 16.6915094,3.90669811 16.6896226,3.92084906 C16.6660377,4.23877358 16.9,4.52367925 17.2179245,4.55292453 C17.2367925,4.55481132 17.2556604,4.55575472 17.2745283,4.55575472" id="Fill-4" fill="#7D5CF6"></path>
+                            <path d="M35.7501887,44.0216038 L62.2709434,44.0216038" id="Stroke-6" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M0.471698113,44.0216038 L24.2820755,44.0216038" id="Stroke-8" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M24.2819811,48.5849057 C24.2819811,47.7669811 28.1008491,39.8556604 28.1008491,39.8556604 L23.260283,39.8556604 L30.8121698,31.545283 L27.0366981,31.545283 L34.3753774,25.1783019 L32.4659434,29.7632075 L35.7499057,29.7632075 L30.8121698,36.8811321 L35.7499057,36.8811321 L32.6989623,48.5849057" id="Stroke-10" stroke="#7D5CF6" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,10 +1,6 @@
 {
     'use strict';
     window.onload = function () {
-        getmdlSelect.init('.getmdl-select');
-        document.addEventListener("DOMNodeInserted", function (ev) {
-            componentHandler.upgradeDom();
-        }, false);
     };
 
     var getmdlSelect = {
@@ -99,13 +95,17 @@
             var dropdowns = document.querySelectorAll(selector);
             [].forEach.call(dropdowns, function (i) {
                 getmdlSelect.addEventListeners(i);
-                var menuWidth  = i.querySelector('.mdl-menu').clientWidth;
-                var labelWidth = i.querySelector('.mdl-textfield__label > span').offsetWidth + 20;
-                i.querySelector('.getmdl-select-container').style.width = Math.max(menuWidth, labelWidth) + 'px';
-                i.querySelector('.mdl-menu__container').style.minWidth = Math.max(menuWidth, labelWidth) + 'px';
-                i.querySelector('.mdl-menu__container').style.maxWidth = Math.max(menuWidth, labelWidth) + 'px';
-                i.querySelector('.mdl-menu').style.minWidth = Math.max(menuWidth, labelWidth) + 'px';
-                i.querySelector('.mdl-menu').style.maxWidth = Math.max(menuWidth, labelWidth) + 'px';
+                var menuWidth  = i.clientWidth + 10;
+                var labelWidth = 0;
+                if (i.querySelector('.mdl-textfield__label > span')) {
+                  labelWidth = i.querySelector('.mdl-textfield__label > span').offsetWidth + 20;                  
+                }
+                var width = Math.max(menuWidth, labelWidth);
+                i.querySelector('.getmdl-select-container').style.width = width + 'px';
+                i.querySelector('.mdl-menu__container').style.minWidth = width + 'px';
+                i.querySelector('.mdl-menu__container').style.maxWidth = width + 'px';
+                i.querySelector('.mdl-menu').style.minWidth = width + 'px';
+                i.querySelector('.mdl-menu').style.maxWidth = width + 'px';
             });
         }
     };

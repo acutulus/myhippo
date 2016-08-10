@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>Documents</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Labels" transform="translate(-900.000000, -2093.000000)"></g>
+        <g id="Documents">
+            <rect id="Rectangle-31" x="0" y="0" width="100" height="100"></rect>
+            <g stroke-linecap="round" stroke="#003066" stroke-linejoin="round">
+                <g transform="translate(22.000000, 26.000000)">
+                    <g id="Group-7">
+                        <polygon id="Stroke-3" points="34.6693 2.8451 34.6243 2.9061 34.6243 45.1551 3.3763 45.1551 3.3763 45.1551 3.3763 48.0001 37.4463 48.0001 37.4463 2.8451"></polygon>
+                        <polygon id="Stroke-5" points="0.554 45.155 34.624 45.155 34.624 0 0.554 0"></polygon>
+                    </g>
+                    <path d="M9.6217,36.3096 L4.9777,40.9886 M9.6217,40.9886 L4.9777,36.3096 M13.1227,38.6496 L30.5737,38.6496 M4.3967,6.5316 L21.8487,6.5316 M4.6617,25.4716 L30.5737,25.4716 M4.6617,19.0816 L30.5737,19.0816 M4.6617,12.6926 L30.5737,12.6926" id="Stroke-8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

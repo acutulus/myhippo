@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myhippo</title>
+	<!-- MDL -->
+	<link rel="stylesheet" href="css/material.min.css">
+	<!-- Google Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--getmdl-select-->
+	<link rel="stylesheet" href="css/getmdl-select.css">
+	<!-- Gridpak -->
+	<link rel="stylesheet" href="css/gridpak.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/css/input.css">
+</head>
+<body data-ng-app="myHippoPublicData" data-ng-controller="PublicDataController" data-ng-class="{'percent-50':publicDataData.submitted}" style="background-color: #7c5bf4; overflow: visible;">
+	<!-- Nav Bar -->
+		<div class="nav-back"></div>
+		<nav class="">
+			<div class="nav-wrap col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+				<div class="logo">
+					<img src="img/logo.svg" alt="Hippo Logo">
+				</div>
+				<div class="chat">
+					<span>CHAT</span>
+					<img src="img/chat.svg" alt="Chat">
+				</div>
+			</div>
+		</nav>
+		<!-- End Nav Bar -->
+	<div class="container">
+		<div class="row">
+
+		<!-- Heading Section -->
+			<div class="quote-heading heading col-lg-10 col-md-8 col-sm-8 col-xs-4">
+				<h2 class="title">Here's your plan {{user}}</h2>
+			</div>
+		<!-- End Heading Section -->
+
+		<!-- Form/Input Section -->
+			<div class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-md-8 col-sm-8 col-xs-4">
+				<div class="container prelim-content">
+					<div class="row">
+						<div class="quote-wrap">
+							<div class="quote-final col-lg-3 col-md-3 col-sm-6">
+								<div class="quote-title">
+									<h3>Your Hippo Plan</h3>
+									<span class="mobile-edit" style="display: none;">EDIT</span>
+								</div>
+								<div class="quote-price prelim">
+									<h1 class="price"><span class="denom">$</span>69 <span class="per-m">/mo</span></h1>
+									<p class="price-p-yr">$850<span class="p-yr">/yr</span></p>
+									<button class="button active">Select</button>
+								</div>
+							</div>
+							<div class="quote-details col-lg-5 col-md-5 col-sm-6">
+							<div class="edit-plan">
+								<a href="#">Edit my plan</a>
+							</div>
+								<div class="deduct">
+									<div class="icon col-lg-1 col-md-1 col-sm-1"><img src="img/money.svg" alt="Money"></div>
+									<div class="sub-title col-lg-4 col-md-2 col-sm-3">
+										<p>Deductible</p>
+										<div class="amount">
+											<h3>$1,500</h3>
+										</div>
+									</div>
+									<a href="" class="dropdown"><i class="material-icons" style="display: none;">arrow_drop_down</i></a>
+								</div>
+								<hr>
+								<div class="home">
+									<div class="icon col-lg-1 col-md-1 col-sm-1"><img src="img/house.svg" alt="House"></div>
+									<div class="sub-title col-lg-4 col-md-2 col-sm-2">
+										<p>Home</p>
+										<div class="amount">
+											<h3>$250,000</h3>
+										</div>
+									</div>
+									<a href="" class="dropdown"><i class="material-icons" style="display: none;">arrow_drop_down</i></a>
+									<div class="price-brkdown col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li class="plan-items">Dwelling Rebuilding<span class="price">$250,000</span></li>
+											<li class="plan-items">Replacement Cost<span class="price">$625,000</span></li>
+											<li class="plan-items">Seperate Structure<span class="price">$140,000</span></li>
+											<li class="plan-items">Loss of use<span class="price">$140,000</span></li>
+											<li class="plan-items">Water Back up<span class="price">$10,000</span></li>
+											<li class="plan-items">Ordinance Protection<span class="price">$25,000</span></li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<div class="personal-prop">
+									<div class="icon col-lg-1 col-md-1 col-sm-1"><img src="img/laptop.svg" alt="Laptop"></div>
+									<div class="sub-title col-lg-3 col-md-2 col-sm-2">
+										<p>Personal Property</p>
+										<div class="amount">
+											<h3>$187,000</h3>
+										</div>
+									</div>
+									<a href="" class="dropdown"><i class="material-icons" style="display: none;">arrow_drop_down</i></a>
+									<div class="price-brkdown col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li class="plan-items">Personal Property<span class="price">$187,500</span></li>
+											<li class="plan-items">Replacement Cost<span class="price">Yes</span></li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<div class="personal-liab">
+									<div class="icon col-lg-1 col-md-1 col-sm-1"><img src="img/injured-foot.svg" alt="Injured Foot"></div>
+									<div class="sub-title col-lg-4 col-md-2 col-sm-2">
+										<p>Liability</p>
+										<div class="amount">
+											<h3>$300,000</h3>
+										</div>
+									</div>
+									<div class="price-brkdown col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li class="plan-items">Personal Liability<span class="price">$100,000</span></li>
+											<li class="plan-items">Medical Payments<span class="price">$1,000</span></li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<div class="extras">
+									<div class="icon col-lg-1 col-md-1 col-sm-1"><img src="img/ice-cream.svg" class="ice-cream" alt="Ice Cream"></div>
+									<div class="sub-title col-lg-4 col-md-2 col-sm-2">
+										<p>Extras</p>
+									</div>
+									<div class="amount">
+										<h3>&nbsp;</h3>
+									</div>
+									<div class="price-brkdown col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li class="plan-items"><span class="chkmark"><img src="img/check.svg" alt="Check" style="display: none;"></span>Identity Theft<span class="price">Yes</span></li>
+											<li class="plan-items"><span class="chkmark"><img src="img/check.svg" alt="Check" style="display: none;"></span>System Coverage<span class="price">Yes</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Form/Input Section -->
+		</div>
+		<!-- End Row -->
+
+		<!-- Continue Button -->
+		<!-- End Continue Button -->
+		
+	</div>
+	<!-- End Container -->
+
+	<!-- MDL JS -->
+	<script src="js/material.js" type="text/javascript"></script>
+	<!--getmdl-select-->
+  <script src="js/getmdl-select.js" type="text/javascript"></script>
+	<!-- Angular JS -->
+	<script src="js/angular.js" type="text/javascript"></script>
+	<!-- Custom JS -->
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>Money</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Labels" transform="translate(-764.000000, -825.000000)"></g>
+        <g id="Money" stroke-linecap="round" stroke-linejoin="round" stroke="#247DFF">
+            <g>
+                <g transform="translate(19.000000, 25.000000)">
+                    <path d="M34.3388776,12.322551 C36.5858163,13.3439796 38.3021429,15.3021429 37.7572449,17.0286735 C36.939898,19.6143878 32.0807143,20.1245918 28.3388776,17.4164286 C25.3623469,15.2623469 25.8807143,12.7919388 28.1460204,11.8705102 C29.8235714,11.189898 32.3480612,11.4164286 34.3388776,12.322551 L34.3388776,12.322551 Z" id="Stroke-3"></path>
+                    <polyline id="Stroke-5" points="50.1695918 11.3221429 53.8471429 8.95785714 50.49 7.53234694"></polyline>
+                    <polyline id="Stroke-7" points="24.5128571 27.9026531 20.4016327 30.5444898 17.1761224 28.5087755"></polyline>
+                    <polyline id="Stroke-9" points="42.8134694 4.74479592 39.8757143 3.49785714 36.3206122 5.52438776"></polyline>
+                    <polyline id="Stroke-11" points="10.5979592 20.104898 6.60408163 22.3814286 10.2183673 24.6640816"></polyline>
+                    <polygon id="Stroke-13" points="0.134693878 22.7178571 20.0846939 35.3127551 61.0897959 8.95867347 39.994898 -0.000510204082"></polygon>
+                    <polygon id="Stroke-15" points="20.085102 35.3129592 3.77591837 25.0170408 0.135102041 27.092551 20.085102 39.687449 61.0891837 13.3323469 56.9912245 11.592551"></polygon>
+                    <polygon id="Stroke-17" points="20.085102 44.3205102 4.01265306 34.1745918 0.135102041 36.3847959 20.085102 48.9796939 61.0891837 22.6245918 56.7238776 20.7715306"></polygon>
+                    <polygon id="Stroke-19" points="20.085102 39.6873469 4.01265306 29.5414286 0.135102041 31.7516327 20.085102 44.3465306 61.0891837 17.9914286 56.7238776 16.1383673"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

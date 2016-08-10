@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Back" transform="translate(1.000000, 1.000000)">
+            <g>
+                <circle id="Oval-4" stroke="#19DD84" cx="29" cy="29" r="29"></circle>
+                <polygon id="Back-Chevron" fill="#19DD84" points="21 29.5 31.5 19 32.5 20 23 29.5 32.5 39 31.5 40"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

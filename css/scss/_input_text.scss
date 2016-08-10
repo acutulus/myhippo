@@ -1,0 +1,133 @@
+// Normal Size-----------------//
+.mdl-textfield {
+	width: 100%;
+}
+
+.question-input-full .mdl-textfield {
+	padding:0;
+}
+
+.question-input-full .mdl-textfield .mdl-textfield__label:after {
+	bottom:0;
+}
+
+.mdl-textfield .mdl-textfield__input {
+	font-size:24px;
+	height:30px;
+}
+
+.mdl-textfield.is-focused .mdl-textfield__input {
+	padding: 4px 0;
+	color: #328DF9;
+}
+
+.mdl-textfield.is-dirty:not(.is-invalid) .filled,
+.mdl-textfield.is-invalid .wrong-info {
+  display:block;
+  margin-top:2px;
+}
+
+.wrong-info {
+	display: none;
+	position: absolute;
+	right: 0;
+}
+
+.filled {
+	display: none;
+	position: absolute;
+	right: 0;
+	color: #7C5BF4;
+}
+
+.mdl-textfield__label {
+	font-size: 12px !important;
+	letter-spacing: 1.1px;
+	color: #5c6f78 !important;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.mdl-textfield__label:after {
+	background-color: #328DF9 !important;
+}
+
+.is-focused .mdl-textfield__label {
+	color: #328DF9 !important;
+}
+
+.selector {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #5C6F78;
+	border-radius: 0;
+}
+
+// Min-Width Large-----------------//
+@media screen and (min-width:1366px) {
+	.hm-info {
+		.btm-select {
+			.mdl-textfield__input {
+				width: 481px;
+				max-width: 481px;
+			}
+		}
+	}
+	.field-container {
+		.mdl-textfield {
+			padding-top: 42px;
+			margin-left: 20px;
+		}
+	}
+}
+// End Min-Width Large
+
+// LG -Large-----------------//
+@media screen and (max-width: 1365px) and (min-width: 1024px) {
+	.field-container {
+		.mdl-textfield {
+			margin-bottom: 0;
+		}
+	}
+}
+// End Large
+
+// Max Height-----------------//
+@media screen and (max-height: 750px) {
+
+}
+// End Max Height
+
+// MD - Medium-----------------//
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+	.mdl-textfield .mdl-textfield__input {
+		font-size:20px;
+		height:30px;
+	}
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+}
+// End Medium
+
+// SM - Small-----------------//
+@media screen and (max-width: 767px) and (min-width: 600px) {
+	.mdl-textfield .mdl-textfield__input {
+		font-size:20px;
+		height:30px;
+	}
+}
+// End Small
+
+// XS - Extra Small-----------------//
+@media screen and (max-width: 600px) {
+	.mdl-textfield {
+	    width: 100%;
+	    margin-bottom: 6px;
+	}
+	.mdl-textfield .mdl-textfield__input {
+		font-size:20px;
+		height:auto;
+	}
+}

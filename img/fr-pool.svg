@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="49px" viewBox="0 0 58 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Free-range pool</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="15 2.05201176 14.4514158 1.18423789e-14 0.713950489 0 0.504772724 10 15 10 15 2.05201176"></polygon>
+        <polygon id="path-3" points="4.92559586 10 0.292 5.5545 0.415915041 5.92118946e-15 16 0 16 10 4.92559586 10"></polygon>
+        <path d="M18.7249523,8.99999992 C19.8191734,5.73229005 21.2200833,2.54417406 23,2.13162821e-14 L16.8850522,2.13162821e-14 L11.710213,0.804 L10.00862,0 L0,2.13162821e-14 L0,9 L18.7249523,9 L18.7249523,8.99999992 Z" id="path-5"></path>
+        <path d="M0,7.12112912 L4.71769824,10 L16.1823678,10 C16.5182861,7.49300805 17.0913413,3.88665015 18,2.96059473e-13 L0,0 L0,7.12112912 L0,7.12112912 Z" id="path-7"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eligibility---Swimming-Pool-Default---Desktop" transform="translate(-535.000000, -331.000000)">
+            <g id="Cards" transform="translate(445.000000, 270.000000)">
+                <g id="Free-Range-Pool">
+                    <g id="Free-range-pool" transform="translate(67.000000, 35.000000)">
+                        <g>
+                            <rect id="Rectangle-17" x="0" y="0" width="100" height="100"></rect>
+                            <g id="Swimming-pool" transform="translate(20.000000, 25.000000)">
+                                <g id="Page-1">
+                                    <g id="Group-7" transform="translate(3.000000, 0.702700)" stroke="#FC664D" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M0.0614,33.1427 C5.85345826,33.1427 5.85345826,39.1427 11.6444567,39.1427 C17.4386346,39.1427 17.4386346,33.1427 23.2328126,33.1427 C29.023811,33.1427 29.023811,39.1427 34.8158693,39.1427 C40.6121669,39.1427 40.6121669,33.1427 46.4074047,33.1427 C52.2037024,33.1427 52.2037024,39.1427 58,39.1427" id="Stroke-1"></path>
+                                        <path d="M0.0614,42.5 C5.5264,42.5 5.5264,48.5 10.9904,48.5 C16.4574,48.5 16.4574,42.5 21.9244,42.5 C27.3884,42.5 27.3884,48.5 32.8534,48.5 C38.3224,48.5 38.3224,42.5 43.7904,42.5 C49.2594,42.5 49.2594,48.5 54.7284,48.5" id="Stroke-3"></path>
+                                        <path d="M42.8333,32.964 C39.1763,30.989 42.8333,0.797 42.8333,0.797 C42.8333,0.797 12.5003,4.464 12.5003,38.464" id="Stroke-5"></path>
+                                    </g>
+                                    <g id="Group-14" transform="translate(44.000000, 12.702700)">
+                                        <g id="Group-10">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Clip-9"></g>
+                                            <path d="M-40.9386,2.428 C-35.4736,2.428 -35.4736,8.428 -30.0096,8.428 C-24.5426,8.428 -24.5426,2.428 -19.0756,2.428 C-13.6116,2.428 -13.6116,8.428 -8.1466,8.428 C-2.6776,8.428 -2.6776,2.428 2.7904,2.428 C8.2594,2.428 8.2594,8.428 13.7284,8.428" id="Stroke-8" stroke="#FC664D" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                                        </g>
+                                        <g id="Group-13" transform="translate(0.000000, 10.000000)">
+                                            <mask id="mask-4" fill="white">
+                                                <use xlink:href="#path-3"></use>
+                                            </mask>
+                                            <g id="Clip-12"></g>
+                                            <path d="M-40.9386,1.7853 C-35.4736,1.7853 -35.4736,7.7853 -30.0096,7.7853 C-24.5426,7.7853 -24.5426,1.7853 -19.0756,1.7853 C-13.6116,1.7853 -13.6116,7.7853 -8.1466,7.7853 C-2.6776,7.7853 -2.6776,1.7853 2.7904,1.7853 C8.2594,1.7853 8.2594,7.7853 13.7284,7.7853" id="Stroke-11" stroke="#FC664D" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-4)"></path>
+                                        </g>
+                                    </g>
+                                    <g id="Group-21" transform="translate(0.000000, 13.702700)">
+                                        <g id="Group-17" transform="translate(1.000000, 0.000000)">
+                                            <mask id="mask-6" fill="white">
+                                                <use xlink:href="#path-5"></use>
+                                            </mask>
+                                            <g id="Clip-16"></g>
+                                            <path d="M2.0614,1.428 C7.5264,1.428 7.5264,7.428 12.9904,7.428 C18.4574,7.428 18.4574,1.428 23.9244,1.428 C29.3884,1.428 29.3884,7.428 34.8534,7.428 C40.3224,7.428 40.3224,1.428 45.7904,1.428 C51.2594,1.428 51.2594,7.428 56.7284,7.428" id="Stroke-15" stroke="#FC664D" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-6)"></path>
+                                        </g>
+                                        <g id="Group-20" transform="translate(0.000000, 9.000000)">
+                                            <mask id="mask-8" fill="white">
+                                                <use xlink:href="#path-7"></use>
+                                            </mask>
+                                            <g id="Clip-19"></g>
+                                            <path d="M3.0614,1.7853 C8.5264,1.7853 8.5264,7.7853 13.9904,7.7853 C19.4574,7.7853 19.4574,1.7853 24.9244,1.7853 C30.3884,1.7853 30.3884,7.7853 35.8534,7.7853 C41.3224,7.7853 41.3224,1.7853 46.7904,1.7853 C52.2594,1.7853 52.2594,7.7853 57.7284,7.7853" id="Stroke-18" stroke="#FC664D" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-8)"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

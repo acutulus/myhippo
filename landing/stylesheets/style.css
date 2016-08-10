@@ -1,0 +1,435 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 6, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 13, ../sass/style.scss */
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "MarkOTBold";
+  src: url(../fonts/MarkOT-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "MarkOTMedium";
+  src: url(../fonts/MarkOT-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "MarkOTRegular";
+  src: url(../fonts/MarkOT.otf) format("opentype");
+}
+@font-face {
+  font-family: "NittiGroteskLight";
+  src: url(../fonts/Nitti-Grotesk-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "NittiGroteskMedium";
+  src: url(../fonts/Nitti-Grotesk-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "NittiGroteskNormal";
+  src: url(../fonts/Nitti-Grotesk.otf) format("opentype");
+}
+/* line 50, ../sass/style.scss */
+.city-illustration {
+  background-image: url(../assets/city-illustration-2x.png);
+  background-size: cover;
+  width: 100%;
+  height: 497px;
+  position: fixed;
+  bottom: 60px;
+  z-index: 5;
+}
+
+/* line 60, ../sass/style.scss */
+.zeppelin {
+  background-image: url(../assets/zeppelin.png);
+  background-size: cover;
+  width: 211px;
+  height: 134px;
+  position: absolute;
+  z-index: 4;
+  top: 200px;
+}
+
+/* line 72, ../sass/style.scss */
+.chopper-container-1, .chopper-container-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+}
+/* line 78, ../sass/style.scss */
+.chopper-container-1 .chopper, .chopper-container-2 .chopper {
+  background-image: url(../assets/chopper.png);
+  background-size: cover;
+  width: 143px;
+  height: 65px;
+  z-index: 4;
+}
+/* line 85, ../sass/style.scss */
+.chopper-container-1 .lights, .chopper-container-2 .lights {
+  display: block;
+  position: relative;
+  right: 120px;
+  transform-origin: 180px 0;
+}
+
+/* line 93, ../sass/style.scss */
+.chopper-container-2 {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  top: 100px;
+}
+
+/* line 104, ../sass/style.scss */
+.balloon-1, .balloon-2, .balloon-3 {
+  background-image: url(../assets/balloon-1.png);
+  background-size: cover;
+  width: 172px;
+  height: 261px;
+  position: absolute;
+  z-index: 4;
+  transform-origin: 86px 0;
+}
+
+/* line 114, ../sass/style.scss */
+.balloon-2 {
+  background-image: url(../assets/balloon-2.png);
+  background-size: cover;
+  width: 107px;
+  height: 172px;
+  transform-origin: 54px 0;
+}
+
+/* line 122, ../sass/style.scss */
+.balloon-3 {
+  background-image: url(../assets/balloon-3.png);
+  background-size: cover;
+  width: 107px;
+  height: 195px;
+  transform-origin: 54px 0;
+}
+
+/* line 130, ../sass/style.scss */
+.clouds-container {
+  position: relative;
+  z-index: 5;
+  top: -20px;
+  left: -320px;
+}
+/* line 136, ../sass/style.scss */
+.clouds-container .clouds-1 {
+  background-image: url(../assets/clouds-1.png);
+  background-size: cover;
+  width: 716px;
+  height: 107px;
+  position: absolute;
+  z-index: 6;
+}
+/* line 145, ../sass/style.scss */
+.clouds-container .clouds-2 {
+  background-image: url(../assets/clouds-2.png);
+  background-size: cover;
+  width: 601px;
+  height: 107px;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 6;
+}
+/* line 155, ../sass/style.scss */
+.clouds-container .rain-1 {
+  background-image: url(../assets/rain-1.png);
+  background-size: cover;
+  width: 600px;
+  height: 547px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 100px;
+  z-index: 4;
+  opacity: 0.3;
+}
+/* line 167, ../sass/style.scss */
+.clouds-container .rain-2 {
+  background-image: url(../assets/rain-2.png);
+  background-size: cover;
+  width: 623px;
+  height: 547px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 65px;
+  z-index: 4;
+  opacity: 0.05;
+}
+/* line 179, ../sass/style.scss */
+.clouds-container .rays {
+  background-image: url(../assets/ray.png);
+  background-size: cover;
+  width: 249px;
+  height: 79px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 320px;
+  opacity: 0;
+  z-index: 4;
+}
+
+/* line 192, ../sass/style.scss */
+.quote-button {
+  font-family: "MarkOTBold";
+  font-size: 14px;
+  text-align: center;
+  background-color: #19DD84;
+  color: white;
+  width: 191px;
+  height: 44px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 205, ../sass/style.scss */
+.quote-button.inside-menu {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 460px;
+  opacity: 0;
+}
+
+/* line 213, ../sass/style.scss */
+topbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: fixed;
+  top: 0;
+}
+/* line 225, ../sass/style.scss */
+topbar .logo {
+  background-image: url(../assets/hippo-logo.png);
+  background-size: cover;
+  width: 90px;
+  height: 30px;
+}
+/* line 232, ../sass/style.scss */
+topbar .menu {
+  margin-top: 10px;
+  background-image: url(../assets/menu.png);
+  background-size: cover;
+  width: 404px;
+  height: 9px;
+}
+
+/* line 241, ../sass/style.scss */
+.next-page-bar {
+  display: block;
+  width: 100%;
+  height: 315px;
+  background-color: #7C5BF4;
+  position: fixed;
+  bottom: -255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  z-index: 15;
+  transition: background-color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+/* line 256, ../sass/style.scss */
+.next-page-bar .arrow-down {
+  background-image: url(../assets/arrow-down.png);
+  background-size: cover;
+  width: 22px;
+  height: 13px;
+  flex-shrink: 0;
+  position: relative;
+  top: 30px;
+}
+/* line 265, ../sass/style.scss */
+.next-page-bar .footer {
+  opacity: 0;
+}
+
+/* line 270, ../sass/style.scss */
+#contentArea, .section-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+/* line 280, ../sass/style.scss */
+#contentArea .section .title, .section-wrapper .section .title {
+  font-family: "MarkOTBold";
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 286, ../sass/style.scss */
+#contentArea .section .title.internal, .section-wrapper .section .title.internal {
+  font-family: "MarkOTRegular";
+  font-size: 64px;
+  text-align: center;
+}
+/* line 291, ../sass/style.scss */
+#contentArea .section .title.internal.one, .section-wrapper .section .title.internal.one {
+  color: #7C5BF4;
+}
+/* line 294, ../sass/style.scss */
+#contentArea .section .title.internal.two, .section-wrapper .section .title.internal.two {
+  color: #F2654E;
+}
+/* line 297, ../sass/style.scss */
+#contentArea .section .title.internal.three, .section-wrapper .section .title.internal.three {
+  color: #19DD84;
+}
+/* line 300, ../sass/style.scss */
+#contentArea .section .title.internal.four, .section-wrapper .section .title.internal.four {
+  color: #328DF9;
+}
+/* line 303, ../sass/style.scss */
+#contentArea .section .title.internal.five, .section-wrapper .section .title.internal.five {
+  margin-top: 15px;
+  color: #004767;
+  line-height: 1.2;
+  font-size: 36px;
+}
+/* line 309, ../sass/style.scss */
+#contentArea .section .title.internal.six, .section-wrapper .section .title.internal.six {
+  color: #004767;
+}
+/* line 315, ../sass/style.scss */
+#contentArea .section .form, .section-wrapper .section .form {
+  margin-top: 60px;
+  font-family: "MarkOTRegular";
+  font-size: 36px;
+  text-align: center;
+  color: #87949A;
+  width: 495px;
+  padding-bottom: 15px;
+  border-bottom: solid 2px #5C6F78;
+}
+/* line 326, ../sass/style.scss */
+#contentArea .section .selectors-list, .section-wrapper .section .selectors-list {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 26px;
+  width: 390px;
+  font-family: "NittiGroteskMedium";
+  font-size: 15px;
+  color: #909090;
+}
+/* line 335, ../sass/style.scss */
+#contentArea .section .selectors-list ul, .section-wrapper .section .selectors-list ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+/* line 342, ../sass/style.scss */
+#contentArea .section .selectors-list ul li, .section-wrapper .section .selectors-list ul li {
+  display: inline;
+  padding: 5px 15px 5px 15px;
+  border-radius: 30px;
+}
+/* line 346, ../sass/style.scss */
+#contentArea .section .selectors-list ul li.selected, .section-wrapper .section .selectors-list ul li.selected {
+  color: #19DD84;
+  border: solid 1px #19DD84;
+}
+/* line 354, ../sass/style.scss */
+#contentArea .section .description, .section-wrapper .section .description {
+  margin-top: 25px;
+  width: 640px;
+  font-family: "NittiGroteskLight";
+  color: #5C6F78;
+  font-size: 25px;
+  line-height: 1.25;
+  text-align: center;
+  z-index: 15;
+}
+/* line 365, ../sass/style.scss */
+#contentArea .section .eyebrow, .section-wrapper .section .eyebrow {
+  width: 640px;
+  font-family: "NittiGroteskLight";
+  text-align: center;
+  font-size: 25px;
+}
+/* line 372, ../sass/style.scss */
+#contentArea .section .eyebrow.one, .section-wrapper .section .eyebrow.one {
+  color: #25126C;
+}
+/* line 375, ../sass/style.scss */
+#contentArea .section .eyebrow.two, .section-wrapper .section .eyebrow.two {
+  color: #C1341E;
+}
+/* line 378, ../sass/style.scss */
+#contentArea .section .eyebrow.three, .section-wrapper .section .eyebrow.three {
+  color: #0C8D53;
+}
+/* line 381, ../sass/style.scss */
+#contentArea .section .eyebrow.four, .section-wrapper .section .eyebrow.four {
+  color: #328DF9;
+}
+/* line 384, ../sass/style.scss */
+#contentArea .section .eyebrow.five, .section-wrapper .section .eyebrow.five {
+  color: #004767;
+}
+/* line 390, ../sass/style.scss */
+#contentArea .section, .section-wrapper #contentArea .section, #contentArea .section-wrapper .section, .section-wrapper .section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 15;
+  top: -80px;
+}
+/* line 403, ../sass/style.scss */
+#contentArea .internalPage, .section-wrapper .internalPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 15;
+  top: -100px;
+}
+/* line 413, ../sass/style.scss */
+#contentArea .internalPage.final-pages, .section-wrapper .internalPage.final-pages {
+  position: relative;
+  top: 0;
+}
+/* line 418, ../sass/style.scss */
+#contentArea .internalPage.first-page, .section-wrapper .internalPage.first-page {
+  position: relative;
+  top: 0;
+}
+/* line 423, ../sass/style.scss */
+#contentArea .internalPage.last-page, .section-wrapper .internalPage.last-page {
+  position: relative;
+  top: -200px;
+}

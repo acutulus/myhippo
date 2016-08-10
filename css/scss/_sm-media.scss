@@ -1,0 +1,87 @@
+@media screen and (max-width: 767px) and (min-width: 600px) {
+
+	.hm-info {
+		.question-full,
+		.question {
+			h4 {
+				font-size: 20px !important;
+				line-height: 1.2;
+				letter-spacing: -0.6px;
+			}
+		}
+		.question {
+			width: 205px;
+		}
+		.question-full {
+			width: 279px;
+		}
+
+	}
+
+	.field-container {
+		padding: 0;	
+	}
+
+	.hm-info .q-checkbox .chck-wrap {
+		right: 30px;
+		bottom: 10px;
+	}
+
+/* 		Questions Page
+------------------------------------------- */
+.questions-container {
+	.question-full,
+	.question {
+		h4 {
+			font-size: 20px;
+			color: #000000;
+			letter-spacing: -0.61px;
+			line-height: 24px;
+		}
+	}
+
+	.icon-wrapper {
+		width: 80px;
+	}
+}
+
+
+	/* 		Page 2 Cards
+	------------------------------------------- */
+	
+	
+
+	/* 		Page 3 Preliminary Page
+	------------------------------------------- */
+	.prelim-hd {
+		margin-bottom: 68px;
+	}
+	.prelim {
+		.bk-crd,
+		.bk-crd-wrap {
+			// width: 720px;
+		}
+		.active-crd {
+			margin: 0;
+			padding: 10px;
+		}
+		.rt-info {
+			margin: 40px 0;
+			margin-left: -30px;
+		}
+		.lft-info {
+			margin: 40px 10px;
+		}
+		.price {
+			font-size: 7.250em;
+		}
+	}
+
+/* Credit Check Page Styles
+----------------------------------- */
+	.abt-pg {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+}

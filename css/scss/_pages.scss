@@ -1,0 +1,104 @@
+#page-container-tiles3 {
+	.tile {
+		.tile-icon {
+			padding: 20px;
+		}
+	}	
+}
+#page-container-tiles4,
+#page-container-tiles5 {
+	.continue-btn {
+		padding-top: 0;
+	}
+}
+.questions-container {
+	 background: rgba(255,255,255, .75);
+}
+
+
+@media screen and (min-width:1366px) {
+	#page-container-fields .field {
+		padding: 22.5px 20px;
+	}
+}
+
+@media screen and (max-width: 1365px) and (min-width: 1024px) {
+	#page-container-fields .field {
+		padding: 22.5px 20px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+	#page-container-fields .field {
+		padding: 15px 15px;
+	}
+	#page-container-tiles3 {
+		.tile {
+			padding: 20px;
+		}
+	}
+}
+// Height Responsive
+@media screen and (max-height: 750px) and (min-width:800px) {
+	#page-container-claims {
+		.claims-button-grp {
+			margin-bottom: 20px;
+		}
+	}
+	#page-container-questions,
+	#page-container-questions2,
+	#page-container-questions3 {
+	.questions-container {
+		form {
+			margin-bottom: 20px;
+		}
+	}
+}
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+	#page-container-fields .field {
+		padding: 22.5px 15px;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+	#page-container-fields .field {
+		padding: 0 20px; 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#page-container-tiles {
+		.heading {
+			margin-bottom: 33px;
+		}
+	}
+	#page-container-questions {
+		.heading {
+			margin-bottom: 0;
+		}
+		.questions-container {
+			.info-icon-mobile {
+				display: initial !important;
+				img {
+					width: 14px;
+				}
+			}
+			.info-icon {
+				display: none;
+			}
+		}
+	}
+	#page-container-tiles5 {
+		.tile {
+			.tile-icon {
+				min-width: 80px;
+				height: 80px;
+				margin-top: -20px;
+				margin-left: -20px;
+				align-items: center;
+			}
+		}
+	}
+}

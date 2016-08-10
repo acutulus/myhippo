@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="82px" height="49px" viewBox="0 0 82 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Fence</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Eligibility---Swimming-Pool-Default---Desktop" transform="translate(-764.000000, -336.000000)">
+            <g id="Cards" transform="translate(445.000000, 270.000000)">
+                <g id="Pool-and-Fence" transform="translate(243.000000, 0.000000)">
+                    <g id="Fence" transform="translate(67.000000, 40.000000)">
+                        <rect id="Rectangle-5" x="0" y="0" width="100" height="100"></rect>
+                        <g id="Pool---fence" transform="translate(9.000000, 26.000000)" stroke-linecap="round" stroke="#247DFF" stroke-linejoin="round">
+                            <g id="Page-1">
+                                <path d="M13.4476,33.0242 C18.9126,33.0242 18.9126,39.0242 24.3766,39.0242 C29.8436,39.0242 29.8436,33.0242 35.3106,33.0242 C40.7746,33.0242 40.7746,39.0242 46.2396,39.0242 C51.7086,39.0242 51.7086,33.0242 57.1766,33.0242 C62.6456,33.0242 62.6456,39.0242 68.1146,39.0242" id="Stroke-1"></path>
+                                <path d="M13.4476,42.3815 C18.9126,42.3815 18.9126,48.3815 24.3766,48.3815 C29.8436,48.3815 29.8436,42.3815 35.3106,42.3815 C40.7746,42.3815 40.7746,48.3815 46.2396,48.3815 C51.7086,48.3815 51.7086,42.3815 57.1766,42.3815 C62.6456,42.3815 62.6456,48.3815 68.1146,48.3815" id="Stroke-3"></path>
+                                <path d="M18.6875,0.5 L18.6875,26.942" id="Stroke-5"></path>
+                                <path d="M7.25,0.5 L7.25,37.942" id="Stroke-7"></path>
+                                <path d="M64.4375,0.5 L64.4375,26.942" id="Stroke-9"></path>
+                                <path d="M75.875,0.5 L75.875,37.942" id="Stroke-11"></path>
+                                <path d="M30.125,0.5 L30.125,23.391" id="Stroke-13"></path>
+                                <path d="M41.5625,0.5 L41.5625,29.192" id="Stroke-15"></path>
+                                <path d="M53,0.5 L53,22.942" id="Stroke-17"></path>
+                                <path d="M0.5,4.3685 L81.062,4.3685" id="Stroke-19"></path>
+                                <path d="M0.5,17.8242 L81.062,17.8242" id="Stroke-21"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

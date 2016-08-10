@@ -1,0 +1,137 @@
+/* 				Fonts
+------------------------------------------- */
+@font-face {
+	font-family: 'MarkOT';
+	src: url('../../fonts/MarkOT.eot'); /* IE9 Compact Modes */
+	src: url('../../fonts/MarkOT.woff') format('woff'),
+		 url('../../fonts/MarkOT.ttf') format('truetype'),
+		 url('../../fonts/MarkOT.svg#MarkOT') format('svg') /* Legacy iOS */;
+}
+
+@font-face {
+	font-family: 'MarkOT-Bold';
+	src: url('../../fonts/MarkOT-Bold.eot'); /* IE9 Compact Modes */
+	src: url('../../fonts/MarkOT-Bold.woff') format('woff'),
+		 url('../../fonts/MarkOT-Bold.ttf') format('truetype'),
+		 url('../../fonts/MarkOT-Bold.svg#MarkOT-Bold') format('svg') /* Legacy iOS */;
+}
+@font-face {
+	font-family: 'MarkOT-Medium';
+	src: url('../../fonts/MarkOT-Medium.eot'); /* IE9 Compact Modes */
+	src: url('../../fonts/MarkOT-Medium.woff') format('woff'),
+		 url('../../fonts/MarkOT-Medium.ttf') format('truetype'),
+		 url('../../fonts/MarkOT-Medium.svg#MarkOT-Medium') format('svg') /* Legacy iOS */;
+}
+@font-face {
+	font-family: 'NittiGrotesk';
+	src: url('../../fonts/NittiGrotesk-Normal.otf') format('opentype'); 
+}
+@font-face {
+	font-family: 'NittiGrotesk-Bold';
+	src: url('../../fonts/NittiGrotesk-Bold.otf') format('opentype'); 
+}
+@font-face {
+	font-family: 'NittiGrotesk-Light';
+	src: url('../../fonts/NittiGrotesk-Light.otf') format('opentype'); 
+}
+@font-face {
+	font-family: 'NittiGrotesk-Medium';
+	src: url('../../fonts/NittiGrotesk-Medium.otf') format('opentype'); 
+}
+
+
+
+
+
+/*				Start Font Styles
+-------------------------------------------------*/
+label,
+.q-checkbox .chk-wrap .mdl-checkbox__label,
+.claims-wrap .time-submitted,
+.quote-details .sub-title p,
+.quote-details .edit-plan a,
+.price-brkdown .plan-items,
+.review-heading h2 .edit,
+.review-info .title,
+.review-info ul li,
+.pill-select .pill-btn,
+.payment-info .note,
+.opt-in .opt-in-note,
+.phone .phone-note p,
+.same-bill-ship .bill-ship-note,
+.freq-select .prcnt-off,
+.todays-total ul li,
+.grand-total .total-title,
+.agreement .agreement-note,
+.required-optional span,
+.required-docs p,
+.confirm-header p,
+.download p,
+.send-docs p,
+.card-heading a,
+.mobile-edit,
+.mil a {
+	font-family: 'NittiGrotesk', sans-serif;
+}
+
+.button,
+.button.disabled,
+.button.inactive,
+.usr-prcnt {
+	font-family: 'NittiGrotesk-Bold', sans-serif;
+}
+
+.prelim .sub-head,
+.prelim button {
+	font-family: 'NittiGrotesk-Medium', sans-serif;
+}
+
+.prelim .sub-txt,
+.prelim ul li:nth-child(odd),
+.prelim .price-p-yr,
+.prelim .extras .id-thft,
+.prelim .extras	.sys-co,
+.prelim .extras	.hm-war,
+.modal .modal-sub-title,
+.heading .sub-title,
+.heading .under-title,
+.mil,
+.tile-info .info {
+	font-family: 'NittiGrotesk-Light', sans-serif;
+}
+
+.prelim ul li:nth-child(even),
+::-webkit-input-placeholder,
+.mdl-textfield__input,
+.claim-type .type,
+.claim-type .amount,
+.claims-button-grp button,
+.quote-title h3,
+.quote-details .amount h3,
+.question-full h4,
+.checkout-heading h2,
+.todays-total ul li .price,
+.grand-total .total-price,
+.card-heading h3,
+.required-docs h4,
+.section-number,
+.download h3,
+.tile-info .title,
+.confirm-header h1,
+.prelim .price,
+.question h4,
+input {
+	font-family: 'MarkOT',sans-serif;
+}
+
+nav .nav-wrap .chat span {
+	font-family: 'MarkOT-Bold', sans-serif;
+}
+
+.modal .modal-title
+.heading .title,
+.prelim-hd h2,
+.heading h2 {
+	font-family: 'MarkOT-Medium', sans-serif !important;
+}
+

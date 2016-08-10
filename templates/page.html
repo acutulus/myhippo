@@ -1,0 +1,41 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <!-- Heading Section -->
+      <div class="heading col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+        <h3 ng-if="page.subTitle && page.subTitle != 'quote'" class="sub-title" ng-bind-html="::page.subTitle"></h3>
+        <h3 ng-if="page.subTitle && page.subTitle == 'quote'" class="sub-title">Your quote so far is <span style="font-weight: bold;">${{prelim.quote}}/mo</span></h3>
+        <h2 class="title">{{page.title}}</h2>
+        <p ng-if="page.underTitle" class="under-title" ng-bind-html="::page.underTitle"></p>
+      </div>
+      <!-- End Heading Section -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- Form/Input Section -->
+      <mh-fields ng-if="page.type == 'fields'">
+      </mh-fields>
+      <mh-tiles ng-if="page.type == 'tiles'">
+      </mh-tiles>
+      <mh-questions ng-if="page.type == 'questions'">
+      </mh-questions>
+      <!-- End Form/Input Section -->
+      <div class="mil col col-lg-10 col-md-8 col-sm-8 col-xs-4" ng-if="page.footer" ng-bind-html="page.footer"></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row" ng-if="!page.noContinue">
+      <!-- Continue Button -->
+      <div class="continue-btn col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect button mobile" data-ng-click="next();">
+          Continue
+        </button>
+      </div>
+      <!-- End Continue Button -->
+    </div>
+  </div>
+</div>
