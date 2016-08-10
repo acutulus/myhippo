@@ -1,0 +1,51 @@
+<div>
+  <!-- Form/Input Section -->
+  <div class="input-wrap {{page.fieldClasses}}">
+    <form name="fieldForm" action="#" class="row">
+      <div ng-repeat="field in page.fields" class="field {{field.classes}}" ng-show="$eval(field.show)">
+         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input" ng-if="field.type == 'number'">
+          <span><i class="material-icons filled">done</i></span>
+          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" min="{{$eval(field.min)}}" max="{{$eval(field.max)}}" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="leadData[field.keyParent][field.key]">
+            <label class="mdl-textfield__label" for="{{::field.key}}">{{field.label}} <span ng-if="field.info"><img src="img/info.svg" class="info-icon" alt="More Info" ng-click="showModal(field.infoModal, $event)"></span></label>
+            <span class="mdl-textfield__error"> </span>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input" ng-if="field.type == 'email'">
+          <span><i class="material-icons filled">done</i></span>
+          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+            <input class="mdl-textfield__input" type="email" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="leadData[field.keyParent][field.key]">
+            <label class="mdl-textfield__label" for="{{::field.key}}">{{field.label}} <span ng-if="field.info"><img src="img/info.svg" class="info-icon" alt="More Info" ng-click="showModal(field.infoModal, $event)"></span></label>
+            <span class="mdl-textfield__error"> </span>
+          </div>
+         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input" ng-if="field.type == 'text'">
+          <span><i class="material-icons filled">done</i></span>
+          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="leadData[field.keyParent][field.key]">
+            <label class="mdl-textfield__label" for="{{::field.key}}">{{field.label}} <span ng-if="field.info"><img src="img/info.svg" class="info-icon" alt="More Info" ng-click="showModal(field.infoModal, $event)"></span></label>
+            <span class="mdl-textfield__error"> </span>
+          </div>
+         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input" ng-if="field.type == 'date'">
+          <span><i class="material-icons filled">done</i></span>
+          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="leadData[field.keyParent][field.key]" mh-date-input="MM | DD | YY">
+            <label class="mdl-textfield__label" for="{{::field.key}}">{{field.label}} <span ng-if="field.info"><img src="img/info.svg" class="info-icon" alt="More Info" ng-click="showModal(field.infoModal, $event)"></span></label>
+            <span class="mdl-textfield__error"> </span>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input"  ng-if="field.type == 'select'" >
+            <span><i class="material-icons filled">done</i></span>
+            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" readonly value="{{field.options[leadData[field.keyParent][field.key]]}}" data-val="">
+            <label for="{{::field.key}}" class="mdl-textfield__label"><span>{{field.label}} <span ng-if="field.info"><img src="img/info.svg" class="info-icon" alt="More Info"  style="pointer-events:fill;"></span></span></label>
+            <div class="getmdl-select-container" ng-click="setSelect(field, $event);">
+              <label for="{{::field.key}}">
+                  <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+              </label>
+              <ul for="{{field.key}}" class="mdl-menu mdl-menu--bottom-left">
+                  <li class="mdl-menu__item" ng-click="showModal(field.infoModal, $event)" ng-repeat="(value, label) in field.options" data-val="{{value}}">{{label}}</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </form>
+  </div>
+  <!-- End Form/Input Section -->
+</div>

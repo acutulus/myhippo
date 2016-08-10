@@ -1,0 +1,64 @@
+<div>
+  <!-- Form/Input Section -->
+  <div class="questions-container col col-xs-4 col-md-6 col-sm-6 col-lg-6 col-lg-offset-2 col-md-offset-1 col-sm-offset-1"> 
+    <form name="questionForm" action="#" class="">
+        <div class="question__wrap row" ng-repeat="question in page.questions" ng-show="$eval(question.show)">
+          <span class="info-icon-mobile" style="display:none;"><img src="img/info.svg" alt="More Info"></span>
+          <span class="icon col col-lg-1 col-md-1 col-sm-1 col-xs-4"><span class="icon-wrapper"><img ng-src="{{question.icon}}" alt="{{question.iconAlt}}"></span></span>
+          <div ng-class="{'question-full question-input-full col col-lg-4 col-md-4 col-sm-4 col-xs-3':question.inputFull}">
+            <div ng-class="{'question-full col col-lg-4 col-md-4 col-sm-4 col-xs-3':!question.inputFull}">
+              <h4>{{question.text}}<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4>
+              <div ng-if="question.subtext">{{question.subtext}}</div>
+            </div>
+          
+            <div>
+              <div class="sm-input" ng-if="question.type == 'number'" ng-class="{'question-control col col-lg-1 col-md-1 col-sm-1 col-xs-4':!question.inputFull}">
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+                  <span><i class="material-icons filled">done</i></span>
+                  <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+                    <input class="mdl-textfield__input" type="number" min="{{$eval(question.min)}}" max="{{$eval(question.max)}}" pattern="-?[0-9]*(\.[0-9]+)?" id="{{::question.key}}" placeholder="{{question.placeholder}}" data-ng-model="leadData[question.keyParent][question.key]" ng-required="question.required">
+                    <label class="mdl-textfield__label" for="{{::question.key}}"></label>
+                    <span class="mdl-textfield__error"> </span>
+                  </div>
+              </div>
+
+              <div class="sm-input" ng-if="question.type == 'text'" ng-class="{'question-control col col-lg-1 col-md-1 col-sm-1 col-xs-4':!question.inputFull}">
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+                  <span><i class="material-icons filled">done</i></span>
+                  <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+                    <input class="mdl-textfield__input" type="text" id="{{::question.key}}" placeholder="{{question.placeholder}}" data-ng-model="leadData[question.keyParent][question.key]" ng-required="question.required">
+                    <label class="mdl-textfield__label" for="{{::question.key}}"></label>
+                    <span class="mdl-textfield__error"> </span>
+                  </div>
+              </div>
+
+              <div class="" ng-if="question.type == 'select'" ng-class="{'question-control col col-lg-1 col-md-1 col-sm-1 col-xs-4':!question.inputFull}">
+                  <div class="mdl-textfield mdl-js-textfield getmdl-select text-input">
+                    <span><i class="material-icons filled">done</i></span>
+                    <input class="mdl-textfield__input" type="text" id="{{::question.key}}" placeholder="{{question.placeholder}}" readonly value="{{question.options[leadData[question.keyParent][question.key]]}}" data-val="" ng-required="question.required">
+                    <div class="getmdl-select-container">
+                      <label for="{{::question.key}}">
+                          <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+                      </label>
+                      <ul for="{{::question.key}}" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item" ng-click="showModal(question.infoModal, $event)" ng-repeat="(value, label) in question.options" data-val="{{value}}">{{label}}</li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="toggle col-xs-1" ng-if="question.type == 'toggle'" ng-class="{'question-control col col-lg-1 col-md-1 col-sm-1 col-xs-1':!question.inputFull}">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="{{::question.key}}">
+                  <input type="checkbox" id="{{::question.key}}" class="mdl-switch__input" data-ng-model="leadData[question.keyParent][question.key]" ng-required="question.required">
+                  <span class="mdl-switch__no">N</span>
+                  <span class="mdl-switch__yes">Y</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="question__border">
+        </div>
+    </form>
+  </div>
+  <!-- End Form/Input Section -->
+</div>

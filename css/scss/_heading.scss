@@ -1,0 +1,135 @@
+// Normal Size-----------------//
+.heading {
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	h2 {
+		font-size: 50px;
+		line-height: 1.1;
+		letter-spacing: -2px;
+		margin: 13px 0px;
+	}
+}
+
+.heading {
+	.title {
+		font-size: 50px;
+		line-height: 1.1;
+		letter-spacing: -2px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.sub-title {
+		font-size: 24px;
+		line-height: 1;
+		color: #5c6f78;
+		margin: 6px 0px;
+	}
+
+	.under-title {
+		width: 497px;
+		height: 34px;
+		opacity: 0.5;
+		font-size: 15px;
+		line-height: 1.1;
+		text-align: center;
+		color: #5c6f78;
+		margin:0 auto;
+	}
+}
+
+// Min-Width Large-----------------//
+@media screen and (min-width:1366px) {
+	.heading {
+		margin-top: 30px;
+	}
+}
+// End Min-Width Large
+
+// LG -Large-----------------//
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+
+}
+// End Large
+
+// Max Height-----------------//
+@media screen and (max-height: 750px) and (min-width:800px) {
+	.page-innner-container {
+		padding-top: 64px;
+	}
+	.heading {
+		.title {
+			font-size: 36px;
+		}
+		.sub-title {
+			font-size: 18px;
+		}
+	}
+}
+// End Max Height
+
+// MD - Medium-----------------//
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+	.heading {
+		.title {
+			font-size: 45px;
+		}
+	}
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+	.heading {
+		margin-bottom: 96px;
+		margin-top: 40px;
+		.title {
+			font-size: 40px;
+		}
+		.sub-title {
+			font-size: 20px;
+		}
+	}
+}
+// End Medium
+
+// SM - Small-----------------//
+@media screen and (max-width: 767px) and (min-width: 600px) {
+	.heading {
+		margin-bottom: 20px;
+		margin-top: 0;
+		.title {
+			font-size: 35px;
+		}
+		.sub-title {
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 15px;
+		}
+	}
+}
+
+// End Small
+
+// XS - Extra Small-----------------//
+@media screen and (max-width: 600px) {
+	.heading {
+		margin-bottom: 41px;
+		margin-top: 30px;
+		.title {
+			font-size: 24px;
+			line-height: 30px;
+			letter-spacing: -1px;
+		}
+
+		.sub-title {
+			font-size: 15px;
+		}
+
+		.under-title {
+			width:auto;
+			height:auto;
+		}
+	}
+}

@@ -1,0 +1,100 @@
+// Normal Size
+.button {
+  width: 100%;
+  max-width: 260px;
+  height: 60px;
+  border: none;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: #19dd84;
+  text-transform: uppercase;
+  outline: none;
+  line-height: 60px;
+  letter-spacing: 2.2px;
+  color: #ffffff;
+  transition:transform 0.5s;
+  transform:scale3d(1, 1, 1);
+
+  .mdl-button__ripple-container {
+      border-radius: 100px;
+  }
+}
+
+.button:hover {
+  background-color: #19dd84;
+  transform:scale3d(1.03, 1.03, 1.03);
+}
+
+.button.disabled, 
+.button[disabled][disabled] {
+  width: 100%;
+  max-width: 260px;
+  height: 60px;
+  background: #D9D9D9;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  line-height: 0.9;
+  letter-spacing: 2.2px;
+}
+
+.button.inactive{
+	width: 100%;
+	max-width: 260px;
+	height: 60px;
+	border: solid 0.5px #19dd84;
+	border-radius: 50px;
+	background-color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.6px;
+	text-align: center;
+	color: #19dd84;
+	outline: none;
+	text-transform: uppercase;
+}
+
+// Min-Width Large-----------------//
+@media screen and (min-width:1366px) {
+  .continue-btn {
+    margin-top: 42px;
+  }
+}
+// End Min-Width Large
+
+// LG -Large-----------------//
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+
+}
+// End Large-----------------//
+
+// Max Height-----------------//
+@media screen and (max-height: 750px) and (min-width:800px) {
+  .continue-btn {
+    padding-top: 0 !important;
+    margin-top: 0;
+  }
+}
+// End Max-Height
+
+// MD - Medium-----------------//
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+
+}
+
+// SM - Small-----------------//
+@media screen and (max-width: 767px) and (min-width: 600px) {
+}
+
+// XS - Extra Small-----------------//
+@media screen and (max-width: 600px) {
+  .button {
+    &.mobile {
+      line-height: initial;
+  	}
+  }
+}

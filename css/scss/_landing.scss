@@ -1,0 +1,362 @@
+/* line 60, ../sass/style.scss */
+.zeppelin {
+  background-image: url(../../img/zeppelin.png);
+  background-size: cover;
+  width: 211px;
+  height: 134px;
+  position: absolute;
+  z-index: -2;
+  top: 200px;
+}
+
+/* line 72, ../sass/style.scss */
+.chopper-container-1, .chopper-container-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+}
+/* line 78, ../sass/style.scss */
+.chopper-container-1 .chopper, .chopper-container-2 .chopper {
+  background-image: url(../../img/chopper.png);
+  background-size: cover;
+  width: 143px;
+  height: 65px;
+  z-index: -2;
+}
+/* line 85, ../sass/style.scss */
+.chopper-container-1 .lights, .chopper-container-2 .lights {
+  display: block;
+  position: relative;
+  right: 120px;
+  transform-origin: 180px 0;
+}
+
+/* line 93, ../sass/style.scss */
+.chopper-container-2 {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  top: 100px;
+}
+
+/* line 104, ../sass/style.scss */
+.balloon-1, .balloon-2, .balloon-3 {
+  background-image: url(../../img/balloon-1.png);
+  background-size: cover;
+  width: 172px;
+  height: 261px;
+  position: absolute;
+  z-index: -2;
+  transform-origin: 86px 0;
+}
+
+/* line 114, ../sass/style.scss */
+.balloon-2 {
+  background-image: url(../../img/balloon-2.png);
+  background-size: cover;
+  width: 107px;
+  height: 172px;
+  transform-origin: 54px 0;
+}
+
+/* line 122, ../sass/style.scss */
+.balloon-3 {
+  background-image: url(../../img/balloon-3.png);
+  background-size: cover;
+  width: 107px;
+  height: 195px;
+  transform-origin: 54px 0;
+}
+
+/* line 130, ../sass/style.scss */
+.clouds-container {
+  position: relative;
+  z-index: 5;
+  top: -20px;
+  left: -320px;
+}
+/* line 136, ../sass/style.scss */
+.clouds-container .clouds-1 {
+  background-image: url(../../img/clouds-1.png);
+  background-size: cover;
+  width: 716px;
+  height: 107px;
+  position: absolute;
+  z-index: 6;
+}
+/* line 145, ../sass/style.scss */
+.clouds-container .clouds-2 {
+  background-image: url(../../img/clouds-2.png);
+  background-size: cover;
+  width: 601px;
+  height: 107px;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 6;
+}
+/* line 155, ../sass/style.scss */
+.clouds-container .rain-1 {
+  background-image: url(../../img/rain-1.png);
+  background-size: cover;
+  width: 600px;
+  height: 547px;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 100px;
+  z-index: 4;
+  opacity: 0.3;
+}
+/* line 167, ../sass/style.scss */
+.clouds-container .rain-2 {
+  background-image: url(../../img/rain-2.png);
+  background-size: cover;
+  width: 623px;
+  height: 547px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 65px;
+  z-index: 4;
+  opacity: 0.05;
+}
+/* line 179, ../sass/style.scss */
+.clouds-container .rays {
+  background-image: url(../../img/ray.png);
+  background-size: cover;
+  width: 249px;
+  height: 79px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 320px;
+  opacity: 0;
+  z-index: 4;
+}
+
+/* line 192, ../sass/style.scss */
+.quote-button {
+  font-family: "MarkOT-Bold";
+  font-size: 14px;
+  text-align: center;
+  background-color: #19DD84;
+  color: white;
+  width: 191px;
+  height: 44px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 205, ../sass/style.scss */
+.quote-button.inside-menu {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 460px;
+  opacity: 0;
+}
+
+/* line 241, ../sass/style.scss */
+.next-page-bar {
+  display: block;
+  width: 100%;
+  height: 315px;
+  background-color: #7C5BF4;
+  position: fixed;
+  bottom: -255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  z-index: 15;
+  transition: background-color 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+}
+/* line 256, ../sass/style.scss */
+.next-page-bar .arrow-down {
+  background-image: url(../../img/arrow-down.png);
+  background-size: cover;
+  width: 22px;
+  height: 13px;
+  flex-shrink: 0;
+  position: relative;
+  top: 30px;
+}
+/* line 265, ../sass/style.scss */
+.next-page-bar .footer {
+  opacity: 0;
+}
+
+.landing {
+  width:100%;
+}
+
+.section-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
+  .section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 15;
+    top: -80px;
+
+    .title {
+      font-family: "MarkOT-Bold";
+      font-size: 3.125em;
+      text-align: center;
+      line-height: 1.2;
+
+      &.internal {
+        font-family: "MarkOT";
+        font-size: 64px;
+        text-align: center;
+
+        &.one {
+          color: #7C5BF4;
+        }
+
+        &.two {
+          color: #F2654E;
+        }
+
+        &.three {
+          color: #19DD84;
+        }
+
+        &.four {
+          color: #328DF9;
+        }
+
+        &.five {
+          margin-top: 15px;
+          color: #004767;
+          line-height: 1.2;
+          font-size: 36px;
+        }
+
+        &.six {
+          color: #004767;
+        }
+      }
+    }
+
+    .form {
+      margin-top: 60px;
+      font-family: "MarkOT";
+      font-size: 36px;
+      text-align: center;
+      color: #87949A;
+      max-width: 495px;
+      line-height: 1;
+      border-bottom: solid 2px #5C6F78;
+    }
+
+    .selectors-list {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      height: 26px;
+      width: 390px;
+      font-family: "NittiGrotesk-Medium";
+      font-size: 15px;
+      color: #909090;
+    }
+
+    .selectors-list ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding:0;
+      margin: 0;
+    }
+
+    .selectors-list ul li {
+      display: inline;
+      padding: 5px 15px 5px 15px;
+      border-radius: 30px;
+      border: solid 1px transparent;
+    }
+
+    .selectors-list ul li.selected {
+      color: #19DD84;
+      border: solid 1px #19DD84;
+    }
+
+    .description {
+      margin-top: 25px;
+      width: 640px;
+      font-family: "NittiGrotesk-Light";
+      color: #5C6F78;
+      font-size: 25px;
+      line-height: 1.25;
+      text-align: center;
+      z-index: 15;
+    }
+
+    .eyebrow {
+      width: 640px;
+      font-family: "NittiGrotesk-Light";
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .eyebrow.one {
+      color: #25126C;
+    }
+
+    .eyebrow.two {
+      color: #C1341E;
+    }
+
+    .eyebrow.three {
+      color: #0C8D53;
+    }
+
+    .eyebrow.four {
+      color: #328DF9;
+    }
+
+    .eyebrow.five {
+      color: #004767;
+    }
+
+  }
+
+  .internalPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+    top: -100px;
+  }
+
+  .internalPage.final-pages {
+    position: relative;
+    top: 0;
+  }
+
+  .internalPage.first-page {
+    position: relative;
+    top: 0;
+  }
+
+  .internalPage.last-page {
+    position: relative;
+    top: -200px;
+  }
+
+}

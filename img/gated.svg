@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Gated community</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gated-community">
+            <g>
+                <rect id="Rectangle-7" x="0" y="0" width="100" height="100"></rect>
+                <g id="Fence" transform="translate(6.000000, 29.000000)" stroke-linecap="round" stroke="#328DF9" stroke-linejoin="round">
+                    <g transform="translate(4.000000, 2.000000)">
+                        <g id="Group-23" transform="translate(7.238095, 0.000000)">
+                            <path d="M0.0830571429,0.452380952 L0.0830571429,36.6790476" id="Stroke-1"></path>
+                            <path d="M6.5208,0.452380952 L6.5208,36.6790476" id="Stroke-3"></path>
+                            <path d="M12.9584524,0.452380952 L12.9584524,36.6790476" id="Stroke-5"></path>
+                            <path d="M19.3961952,0.452380952 L19.3961952,36.6790476" id="Stroke-7"></path>
+                            <path d="M25.8339381,0.452380952 L25.8339381,36.6790476" id="Stroke-9"></path>
+                            <path d="M32.2715905,0.452380952 L32.2715905,36.6790476" id="Stroke-11"></path>
+                            <path d="M38.7093333,0.452380952 L38.7093333,36.6790476" id="Stroke-13"></path>
+                            <path d="M45.1469857,0.452380952 L45.1469857,36.6790476" id="Stroke-15"></path>
+                            <path d="M51.5847286,0.452380952 L51.5847286,36.6790476" id="Stroke-17"></path>
+                            <path d="M58.022381,0.452380952 L58.022381,36.6790476" id="Stroke-19"></path>
+                            <path d="M64.4601238,0.452380952 L64.4601238,36.6790476" id="Stroke-21"></path>
+                        </g>
+                        <path d="M5.53669048,4.32087143 L73.1233095,4.32087143" id="Stroke-24"></path>
+                        <path d="M5.53669048,28.2596952 L73.1233095,28.2596952" id="Stroke-25"></path>
+                        <path d="M0.452380952,37.547619 L78.8228571,36.6790476" id="Stroke-26"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,80 @@
+// Normal Size-----------------//
+.getmdl-select.getmdl-select-visible .mdl-textfield__label {
+	z-index: 1000;
+}
+.getmdl-select .mdl-textfield__label:after {
+	visibility: hidden !important;
+}
+.getmdl-select.mdl-textfield--floating-label .mdl-menu {
+	padding-top: 20px;
+}
+.mdl-menu__outline {
+	width:100% !important;
+}
+.mdl-menu__container {
+	top: -2px !important;
+	left: -10px !important;
+}
+.mdl-menu__item {
+  padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+  margin: 10px 0px;
+}
+.mdl-menu__item:hover {
+    background-color: #e2effe;
+}
+.btm-select {
+	float: initial;
+	position: relative;
+	bottom: 45px;
+	margin-left: 100px;
+	.mdl-textfield {
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		.mdl-textfield__input {
+			
+		}
+	}
+}
+
+// Min-Width Large-----------------//
+@media screen and (min-width:1366px) {
+
+}
+// End Min-Width Large
+
+// LG -Large-----------------//
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+
+}
+// End Large
+
+// Max Height-----------------//
+@media screen and (max-height: 750px) {
+
+}
+// End Max Height
+
+// MD - Medium-----------------//
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+
+}
+// End Medium
+
+// SM - Small-----------------//
+@media screen and (max-width: 767px) and (min-width: 600px) {
+	
+}
+
+// End Small
+
+// XS - Extra Small-----------------//
+@media screen and (max-width: 600px) {
+
+}

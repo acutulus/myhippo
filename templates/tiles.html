@@ -1,0 +1,17 @@
+<div>
+  <!-- Form/Input Section -->
+    <div class="tiles">
+      <div ng-repeat="tile in page.tiles" ng-mouseover="hoverTile($event, tile, true);" ng-mouseout="hoverTile($event, tile, false);" class="{{tile.classes}}" ng-click="tileClicked(tile);">
+        <div class="tile" ng-class="{'selected':tile.selected}">
+          <div ng-if="page.multi" class="tile-select"><i class="material-icons">done</i></div>
+          <div class="tile-icon"><img ng-src="{{::tile.icon}}" alt="{{::tile.iconAlt}}"></div>
+          <div class="tile-info">
+            <p class="title" ng-style="{color:tile.color}">{{::tile.title}}</p>
+            <p class="info" ng-bind-html="::tile.body"></p>
+            <p class="usr-prcnt" ng-if="tile.percent">{{::tile.percent}}</p>
+            <p class="footer" ng-if="tile.footer">{{::tile.footer}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

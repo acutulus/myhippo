@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Stories</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Stories" stroke="#FCC948">
+            <g id="Stories-Building" transform="translate(28.000000, 22.000000)">
+                <g id="Group">
+                    <path d="M0.423076923,56.5 L43.4457692,56.5" id="Stroke-1"></path>
+                    <path d="M34,47 L34,15" id="Stroke-4"></path>
+                    <path d="M30,15 L30,47" id="Stroke-5"></path>
+                    <path d="M26,15 L26,47" id="Stroke-6"></path>
+                    <path d="M22,15 L22,47" id="Stroke-7"></path>
+                    <path d="M18,15 L18,47" id="Stroke-8"></path>
+                    <path d="M14,15 L14,47" id="Stroke-9"></path>
+                    <path d="M10,15 L10,47" id="Stroke-10"></path>
+                    <polyline id="Stroke-11" points="14 15 14 11 30 11 30 15"></polyline>
+                    <polyline id="Stroke-12" points="27 11 27 8 17 8 17 11"></polyline>
+                    <polyline id="Stroke-13" points="38.8855244 55.5820896 38.8855244 46.5151045 4.83564634 46.5151045 4.83564634 55.5820896"></polyline>
+                    <path d="M21.7316829,48.7697313 L21.7316829,48.7697313 C20.4597317,48.7697313 19.4285122,49.779403 19.4285122,51.0247761 L19.4285122,55.5816716 L24.2926585,55.5816716 L24.2926585,51.277194 C24.2926585,49.8922388 23.1461951,48.7697313 21.7316829,48.7697313 L21.7316829,48.7697313 Z" id="Stroke-15"></path>
+                    <path d="M21.8605854,0.336250746 L21.8605854,8.27738507" id="Stroke-17"></path>
+                    <path d="M9.88708537,46.5153552 L33.8339146,46.5153552" id="Stroke-19"></path>
+                    <path d="M33.8341707,35.883797 L9.88734146,35.883797" id="Stroke-21"></path>
+                    <path d="M33.8341707,25.2522388 L9.88734146,25.2522388" id="Stroke-23"></path>
+                    <path d="M33.8341707,14.6206806 L9.88734146,14.6206806" id="Stroke-25"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

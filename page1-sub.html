@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myhippo</title>
+	<!-- MDL -->
+	<link rel="stylesheet" href="css/material.min.css">
+	<!-- Google Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--getmdl-select-->
+	<link rel="stylesheet" href="css/getmdl-select.css">
+	<!-- Gridpak -->
+	<link rel="stylesheet" href="css/gridpak.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/css/input.css">
+</head>
+<body data-ng-app="myHippoPublicData" data-ng-controller="PublicDataController" data-ng-class="{'percent-50':publicDataData.submitted}">
+	<div class="container">
+		<div class="row">
+		<!-- Nav Bar -->
+			<nav class="">
+				<div class="nav-wrap col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+					<div class="logo">
+						<img src="img/logo.svg" alt="Hippo Logo">
+					</div>
+					<div class="chat">
+						<span>CHAT</span>
+						<img src="img/chat.svg" alt="Chat">
+					</div>
+				</div>
+			</nav>
+		<!-- End Nav Bar -->
+
+		<!-- Heading Section -->
+			<div class="heading col-lg-10 col-md-8 col-sm-8 col-xs-4">
+				<h2>Can you tell us more about your home?</h2>
+			</div>
+		<!-- End Heading Section -->
+
+		<!-- Form/Input Section -->
+			<div class="questions-container col-xs-10">
+				<div class="question__wrap">
+					<span class="icon"><img src="img/cake.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>What year was your house built?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 sm-input field-container">
+						 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="yr-built" placeholder="YYYY" data-ng-model="publicDataData.form.yearBuilt">
+						    <span class="mdl-textfield__error"> </span>
+						  </div>
+					</div>
+					
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/building.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>How many stories is your home?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 sm-input field-container">
+					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+							<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="stories" placeholder="Select" readonly>
+				           	<div class="getmdl-select-container">
+					            <label for="stories">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="stories" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">Germany</li>
+					                <li class="mdl-menu__item">Belarus</li>
+					                <li class="mdl-menu__item">Russia</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/facet.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question"><h4>Updated Plumbing<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						  <span class="mdl-switch__label"></span>
+						</label>
+					</div>
+					
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/outlet.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question"><h4>Updated Electrical<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						  <span class="mdl-switch__label"></span>
+						</label>
+					</div>
+					
+				</div>
+				<div class="question__wrap">
+					<span class="icon col-xs-4"><img src="img/thermo.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question"><h4>Updated heating/HVAC<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						  <span class="mdl-switch__label"></span>
+						</label>
+					</div>
+					
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/earthquake.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question"><h4>Earthquake Retrofitted<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						  <span class="mdl-switch__label"></span>
+						</label>
+					</div>
+					
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/roof.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>When was your roof constructed?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 field-container sm-input fbr-roof">
+						 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="yr-built" placeholder="YYYY" data-ng-model="publicDataData.form.yearBuilt">
+						    <span class="mdl-textfield__error"> </span>
+						  </div>
+					</div>
+					<div class="q-checkbox">
+						<div class="chck-wrap">
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+							  <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+							  <span class="mdl-checkbox__label">I'm not sure</span>
+							</label>
+						</div>
+					</div>
+					
+				</div>
+
+				<!-- Bottom Selects -->
+				<div class="question__wrap">
+					<span class="icon"><img src="img/fiber-roof.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>What type of material is your roof?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="col-lg-5 col-md-6 col-xs-4 btm-select">
+					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+							<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="roof" placeholder="Select" readonly>
+				           	<div class="getmdl-select-container">
+					            <label for="roof">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="roof" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">Germany</li>
+					                <li class="mdl-menu__item">Belarus</li>
+					                <li class="mdl-menu__item">Russia</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/calender.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>When was your roof last maintained?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="col-lg-5 col-md-6 col-xs-4 btm-select">
+					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+							<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="roofMain" placeholder="Select" readonly>
+				           	<div class="getmdl-select-container">
+					            <label for="roofMain">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="roofMain" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">Germany</li>
+					                <li class="mdl-menu__item">Belarus</li>
+					                <li class="mdl-menu__item">Russia</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/stilts-house.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question"><h4>Is your house built on stilts?<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+						  <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+						  <span class="mdl-switch__label"></span>
+						</label>
+					</div>
+			      
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/construction.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>Construction type of home<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-4 btm-select">
+					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+							<span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="constHome" placeholder="Select" readonly>
+				           	<div class="getmdl-select-container">
+					            <label for="constHome">
+					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+					            </label>
+					            <ul for="constHome" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+					                <li class="mdl-menu__item">Germany</li>
+					                <li class="mdl-menu__item">Belarus</li>
+					                <li class="mdl-menu__item">Russia</li>
+					            </ul>
+				            </div>
+				        </div>
+			        </div>
+			        
+				</div>
+				<div class="question__wrap">
+					<span class="icon"><img src="img/ruler.svg" alt="Cake"></span>
+					<span class="mbl-info"><img src="img/info.svg" alt="Info"></span>
+					<div class="question-full"><h4>Square footage of home<span class="info-icon"><img src="img/info.svg" alt=Info></span></h4></div>
+					<div class="col col-lg-5 col-md-2 col-sm-6 col-xs-4 btm-select">  
+						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						 	<span><i class="material-icons filled">done</i></span>
+						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sq-ft" placeholder="sq ft" data-ng-model="publicDataData.form.squareFootage">
+						    <span class="mdl-textfield__error"></span>
+						  </div>
+				  	</div>
+				</div>
+				<!-- End Bottom Selects -->
+			</div>
+			<!-- End Form/Input Section -->
+		</div>
+		<!-- End Row -->
+	
+		<!-- Continue Button -->
+		<div class="continue-btn mr-q-cnt col col-xs-4" data-ng-disabled="!isValid()" disabled="true">
+			<button class="mdl-js-ripple-effect" data-ng-click="submit('page2.html');">
+				Continue
+			</button>
+		</div>
+		<!-- End Continue Button -->
+
+		<span class="bk-btn"><img src="img/back.svg" alt="Back Button"></span>
+		
+	</div>
+	<!-- End Container -->
+
+	<!-- MDL JS -->
+	<script src="js/material.js" type="text/javascript"></script>
+	<!--getmdl-select-->
+  <script src="js/getmdl-select.js" type="text/javascript"></script>
+	<!-- Angular JS -->
+	<script src="js/angular.js" type="text/javascript"></script>
+	<!-- Custom JS -->
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

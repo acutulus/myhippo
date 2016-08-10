@@ -3,10 +3,8 @@
   margin-top: -30px;
   color: rgba(0, 0, 0, 0.4); }
 
-.getmdl-select .mdl-menu__container {
-  width: 100% !important; }
-  .getmdl-select .mdl-menu__container .mdl-menu .mdl-menu__item {
-    font-size: 16px; }
+.getmdl-select .mdl-menu__container .mdl-menu .mdl-menu__item {
+  font-size: 16px; }
 
 .getmdl-select__fullwidth .mdl-menu {
   width: 100%; }

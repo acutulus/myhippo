@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="52px" viewBox="0 0 55 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Local fire alarm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Discounts-part-1---Default---Desktop" transform="translate(-534.000000, -329.000000)">
+            <g id="Local-Fire-Alarm" transform="translate(444.000000, 270.000000)">
+                <g id="Local-fire-alarm" transform="translate(67.000000, 34.000000)">
+                    <g>
+                        <path d="M71,34.9479 C71,36.3289 69.881,37.4479 68.5,37.4479 C67.119,37.4479 66,36.3289 66,34.9479 C66,33.5669 67.119,32.4479 68.5,32.4479 C69.881,32.4479 71,33.5669 71,34.9479" id="Fill-1" fill="#19DD84"></path>
+                        <path d="M73.5,50.9059 C73.5,64.7129 62.307,75.9059 48.5,75.9059 C34.693,75.9059 23.5,64.7129 23.5,50.9059 C23.5,37.0989 34.693,25.9059 48.5,25.9059 C62.307,25.9059 73.5,37.0989 73.5,50.9059" id="Fill-3" fill="#FFFFFF"></path>
+                        <path d="M73.5,50.9059 C73.5,64.7129 62.307,75.9059 48.5,75.9059 C34.693,75.9059 23.5,64.7129 23.5,50.9059 C23.5,37.0989 34.693,25.9059 48.5,25.9059 C62.307,25.9059 73.5,37.0989 73.5,50.9059 L73.5,50.9059 Z" id="Stroke-5" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M71.2273,50.9059 C71.2273,63.4579 61.0523,73.6329 48.5003,73.6329 C35.9483,73.6329 25.7723,63.4579 25.7723,50.9059 C25.7723,38.3539 35.9483,28.1789 48.5003,28.1789 C61.0523,28.1789 71.2273,38.3539 71.2273,50.9059 L71.2273,50.9059 Z" id="Stroke-7" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M48.1286,65.4514 C41.6486,64.7894 36.1366,60.5004 37.4736,53.4084 C38.2526,49.2814 41.2066,48.1404 43.6206,45.2134 C46.1956,42.0914 46.7836,38.0114 45.5386,34.6444 C45.3966,34.2594 48.3156,35.0874 48.3456,35.0994 C50.0886,35.7834 51.4326,36.9354 52.5276,38.4334 C54.1006,40.5844 54.9966,43.1944 54.7176,45.8704 C54.1956,50.8764 50.3176,53.1994 48.1116,57.2374 C46.7746,59.6854 47.3346,62.9044 48.1286,65.4514 L48.1286,65.4514 Z" id="Stroke-9" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M57.8688,48.5762 C61.7108,53.9952 59.1678,61.4532 54.1598,64.5492 C50.7198,66.6762 48.5308,60.8282 52.4388,57.3842 C56.6838,53.6422 56.2018,51.9092 57.8688,48.5762 L57.8688,48.5762 Z" id="Stroke-11" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M67.9313,28.6148 L67.5893,25.4998" id="Fill-13" fill="#FFFFFF"></path>
+                        <path d="M67.9313,28.6148 L67.5893,25.4998" id="Stroke-15" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <g id="Group-20" transform="translate(74.000000, 37.405900)">
+                            <path d="M0.609,0.042 L3.579,1.042" id="Fill-17" fill="#FFFFFF"></path>
+                            <path d="M0.609,0.042 L3.579,1.042" id="Stroke-19" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                        <path d="M72.9403,31.4479 L76.0593,28.3289" id="Stroke-21" stroke="#19DD84" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect id="Rectangle-32" x="0" y="0" width="100" height="100"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

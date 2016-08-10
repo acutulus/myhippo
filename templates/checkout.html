@@ -1,0 +1,271 @@
+	<div class="container checkout">
+		<div class="row">
+
+		<!-- Heading Section -->
+			<div class="heading col-lg-10 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-xs-4">
+				<h2 class="title">Checkout</h2>
+			</div>
+		<!-- End Heading Section -->
+
+		<!-- Form/Input Section -->
+			<div class="billing-total col col-lg-3 col-md-3 col-sm-8 col-xs-4">
+				<div class="frequency">
+					<div class="freq-select">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+				            <span><i class="material-icons filled">done</i></span>
+				            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" readonly data-ng-model="page.form[field.key]">
+				            <label for="{{::field.key}}" class="mdl-textfield__label"><span>Billing Frequency <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+				            <div class="getmdl-select-container">
+				              <label for="{{::field.key}}">
+				                  <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+				              </label>
+				              <ul for="{{field.key}}" class="mdl-menu mdl-menu--bottom-left">
+				                  <li class="mdl-menu__item" ng-repeat="option in field.options">Annually</li>
+				                  <li class="mdl-menu__item" ng-repeat="option in field.options">Monthly</li>
+				              </ul>
+				            </div>
+				        </div>
+				        <span class="prcnt-off">20% off $850 every 12 months</span>
+					</div>
+				</div>
+				<div class="todays-total">
+					<ul>
+						<li>Yearly Premium<span class="price">$850</span></li>
+						<li>Taxes<span class="price">$170</span></li>
+						<li>Policy<span class="price">$70</span></li>
+						<li>Inspection Fee<span class="price">$50</span></li>
+					</ul>
+					<div class="grand-total">
+						<h3 class="total-title">Today's Total</h3>
+						<h2 class="total-price">$1140</h2>
+					</div>
+				</div>
+			</div>
+			<div class="checkout-container col col-lg-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-8 col-xs-4">
+				<div class="review col-lg-8 col-md-6 col-sm-8 col-xs-4">
+					<div class="col icon"><img src="img/review.svg" alt="Review"></div>
+					<div class="checkout-heading col-lg-4 col-md-4 col-sm-8 col-xs-4">
+						<h2>Review <span><a href="" class="edit">Edit</a></span> </h2>
+						<hr>
+					</div>
+					<div class="review-info col-lg-5 col-md-5 col-sm-8 col-xs-4">
+						<div class="left-info col-md-2 col-sm-4 col-xs-4">
+							<ul class="address">
+								<li class="title">Address</li>
+								<li>1234 Morris Dr</li>
+								<li>Palo Alto, CA 94303</li>
+							</ul>
+							<ul class="records">
+								<li class="title">From Our Records</li>
+								<li>Year Built: 1978</li>
+								<li>Stories: 2</li>
+								<li>Bathrooms: 3</li>
+								<li>Sq. Footage: 1,100sq ft</li>
+								<li>Roof Type: Slate</li>
+								<li>Overall Quality: Standard</li>
+								<li>Bedrooms: 3</li>
+							</ul>
+							<ul class="discounts">
+								<li class="title">Discounts</li>
+								<li>Local Fire Alarm</li>
+								<li>Local Burglar Alarm</li>
+							</ul>
+						</div>
+						<div class="right-info">
+							<ul class="about">
+								<li class="title">About You</li>
+								<li>Lauren M. Smith</li>
+								<li>DOB: 03/12/1982</li>
+								<li>laurensmith@gmail.com</li>
+								<li>Date of Purchase: 05/05/12</li>
+								<li>No. of Claims filed since 2013: 0</li>
+							</ul>
+							<ul class="eligibility">
+								<li class="title">Eligibility</li>
+								<li>Roof Age: 2004</li>
+								<li>Swimming Pool: No</li>
+								<li>Nearest Fire Station: 3.4mi</li>
+								<li>Updated Electric: Yes</li>
+								<li>Updated Plumbing: Yes</li>
+								<li>Updated Heating/HVAC: Yes</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="coverage col-lg-8 col-md-6 col-sm-8 col-xs-4">
+					<div class="col icon"><img src="img/calender-alt.svg" alt="Calender"></div>
+					<div class="checkout-heading col-lg-4 col-md-4 col-sm-3 col-xs-4">
+						<h2>Coverage Effective Date</h2>
+					</div>
+					<div class="date-select col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+			            <span><i class="material-icons filled">done</i></span>
+			            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" readonly data-ng-model="page.form[field.key]">
+			            <label for="{{::field.key}}" class="mdl-textfield__label"><span>I want my home to be covered starting <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+			            <div class="getmdl-select-container">
+			              <label for="{{::field.key}}">
+			                  <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+			              </label>
+			              <ul for="{{field.key}}" class="mdl-menu mdl-menu--bottom-left">
+			                  <li class="mdl-menu__item" ng-repeat="option in field.options">{{option.label}}</li>
+			              </ul>
+			            </div>
+			          </div>
+					</div>
+				</div>
+				<div class="payment col-lg-8 col-md-6 col-sm-8 col-xs-4">
+					<div class="col icon"><img src="img/money-alt.svg" alt="Calender"></div>
+					<div class="checkout-heading col-lg-4 col-md-4 col-sm-3 col-xs-4">
+						<h2>Payment Method</h2>
+					</div>
+					<div class="payment-info col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<div class="pill-select col-lg-3 col-md-3 col-sm-3 col-xs-4">
+							<a href="" class="pill-btn">Escrow</a>
+							<a href="" class="pill-btn active">Credit</a>
+							<a href="" class="pill-btn">Debit</a>
+						</div>
+						<div class="card-name col-md-4">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+					          <span><i class="material-icons filled">done</i></span>
+					          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+					            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+					            <label class="mdl-textfield__label" for="{{::field.key}}">Cardholder Name</label>
+					            <span class="mdl-textfield__error"> </span>
+					        </div>
+				        </div>
+				        <div class="card-num col-md-4">
+				        	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+					          <span><i class="material-icons filled">done</i></span>
+					          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+					            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+					            <label class="mdl-textfield__label" for="{{::field.key}}">Card Number</label>
+					            <span class="mdl-textfield__error"> </span>
+					        </div>
+				        </div>
+				        <div class="exp-date-cvv">
+				        	<div class="exp-date col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				        		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						          <span><i class="material-icons filled">done</i></span>
+						          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]" mh-date-input="MM | DD | YY">
+						            <label class="mdl-textfield__label" for="{{::field.key}}">Exp Date</label>
+						            <span class="mdl-textfield__error"> </span>
+          						</div>
+				        	</div>
+				        	<div class="cvv col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				        		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						          <span><i class="material-icons filled">done</i></span>
+						          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+						            <label class="mdl-textfield__label" for="{{::field.key}}">Cvv</label>
+						            <span class="mdl-textfield__error"> </span>
+						        </div>
+						        <span class="credit-cvv"><img src="img/cvv.svg" alt="CVV"></span>
+				        	</div>
+				        </div>
+				        <div class="note">
+			        		<p>NOTE: payment via credit card or debit card is subject to a 2.5% fee.</p>
+			        	</div>
+			        	<div class="opt-in">
+				        	<div class="tile-select col"><i class="material-icons">done</i></div>
+				        	<span class="opt-in-note">Opt in for auto-renewal with this payment method. Renewal will occur on <dynamic date>.</span>
+			        	</div>	
+					</div>	
+				</div>
+				<div class="billing col-lg-8 col-md-6 col-sm-8 col-xs-4">
+					<div class="col icon map"><img src="img/map-pin.svg" alt="Map Pin"></div>
+					<div class="checkout-heading col-lg-4 col-md-4 col-sm-3">
+						<h2>Billing Address</h2>
+					</div>
+					<div class="address-inputs col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<!-- Address 1 -->
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+				          <span><i class="material-icons filled">done</i></span>
+				          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+				            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+				            <label class="mdl-textfield__label" for="{{::field.key}}">Address Line 1</label>
+				            <span class="mdl-textfield__error"> </span>
+				        </div>
+				        <!-- Address 2 -->
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+				          <span><i class="material-icons filled">done</i></span>
+				          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+				            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+				            <label class="mdl-textfield__label" for="{{::field.key}}">Address Line 2</label>
+				            <span class="mdl-textfield__error"> </span>
+				        </div>
+				        <!-- City -->
+				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+				          <span><i class="material-icons filled">done</i></span>
+				          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+				            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+				            <label class="mdl-textfield__label" for="{{::field.key}}">City</label>
+				            <span class="mdl-textfield__error"> </span>
+				        </div>
+				        <!-- State and Zip -->
+				        <div class="state-zip">
+				        	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					        	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
+						            <span><i class="material-icons filled">done</i></span>
+						            <input class="mdl-textfield__input" type="text" id="{{::field.key}}" placeholder="{{field.placeholder}}" readonly data-ng-model="page.form[field.key]">
+						            <label for="{{::field.key}}" class="mdl-textfield__label"><span>State <span><img src="img/info.svg" class="info-icon" alt="More Info"></span></span></label>
+						            <div class="getmdl-select-container">
+						              <label for="{{::field.key}}">
+						                  <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
+						              </label>
+						              <ul for="{{field.key}}" class="mdl-menu mdl-menu--bottom-left">
+						                  <li class="mdl-menu__item" ng-repeat="option in field.options">{{option.label}}</li>
+						              </ul>
+						            </div>
+						        </div>
+					        </div>
+					        <div class="zip col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					        	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+						          <span><i class="material-icons filled">done</i></span>
+						          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+						            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+						            <label class="mdl-textfield__label" for="{{::field.key}}">Zip Code</label>
+						            <span class="mdl-textfield__error"> </span>
+						        </div>
+					        </div>
+				        </div>
+				        <div class="phone">
+				        	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
+					          <span><i class="material-icons filled">done</i></span>
+					          <span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
+					            <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="{{::field.key}}" placeholder="{{field.placeholder}}" data-ng-model="page.form[field.key]">
+					            <label class="mdl-textfield__label" for="{{::field.key}}">Phone Number</label>
+					            <span class="mdl-textfield__error"> </span>
+					        </div>
+					        <div class="phone-note">
+					        	<p>Hippo will only use your number for urgent matters regarding your policy and / or payment.</p>
+					        </div>
+					        <div class="same-bill-ship">
+					        	<div class="tile-select col"><i class="material-icons">done</i></div>
+					        	<span class="bill-ship-note">My shipping and billing address are the same</span>
+				        	</div>
+				        </div>
+					</div>
+				</div>
+			</div>
+			<!-- End Form/Input Section -->
+		</div>
+		<!-- End Row -->
+
+		<div class="container">
+		    <div class="row" ng-if="!page.noContinue">
+		    	<div class="agreement">
+		        	<div class="tile-select col"><i class="material-icons">done</i></div>
+		        	<span class="agreement-note">I understand that my liability coverage may not include claims associated with exotic animals and dangerous dog breeds. <span class="exclusions">See all exclusions.</span></span>
+	        	</div>
+		      <!-- Continue Button -->
+		      <div class="continue-btn col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+		        <button class="mdl-button mdl-js-button mdl-js-ripple-effect button mobile disabled" data-ng-click="next();">
+		          Purchase
+		        </button>
+		      </div>
+		      <!-- End Continue Button -->
+		    </div>
+		</div>
+		
+	</div>

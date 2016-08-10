@@ -1,0 +1,49 @@
+/*      THIS IS THE START OF THE MEDIA QUERIES!!!!!!!
+-------------------------------------------------------- */ 
+
+@media screen and (min-width:1366px) {
+	/* 		Page 1 Sub Page More Home Info
+	------------------------------------------- */
+	// .hm-info {
+	// 	padding: 0 70px;
+	// 	.question__wrap {
+			
+	// 		.icon {
+	// 			img {
+	// 				margin-bottom: 20px;
+	// 				margin-top: 10px;
+	// 			}
+	// 		}
+	// 		.question{
+	// 			 h4 {
+	// 				display: inline;
+	// 				font-size: 24px;
+	// 				line-height: 1;
+	// 				letter-spacing: -0.7px;
+	// 				color: #000000;
+	// 			}
+	// 		}
+			
+	// 		.fbr-roof {
+	// 			padding-left: 0;
+	// 			margin-left: -34px;
+	// 			.mdl-textfield {
+	// 				padding-top: 32px;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+
+	.hm-info .q-checkbox .chck-wrap {
+		bottom: 10px;
+	}
+}
+
+@import 'md-media';
+
+@import 'sm-media';
+
+@import 'xs-media';

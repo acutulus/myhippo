@@ -1,0 +1,115 @@
+@media screen and (max-width: 1024px) and (min-width: 840px) {
+	// .mdl-icon-toggle__label.material-icons {
+	// 	margin-right: 20px;
+	// }
+
+	//Page 1 Sub Page 1
+	.hm-info {
+			
+			.field-container,
+			.fbr-roof {
+			float: right;
+			padding-right: 0;
+		}
+	}
+	.fbr-roof {
+		margin-right: 0 !important;
+	}
+	.question {
+		max-width: 230px;
+	}
+	.question-full {
+		display: inline-block;
+		max-width: 340px;
+	}
+	.question-full,
+	.question {
+		h4 {
+			font-size: 20px !important;
+			line-height: 1.2;
+			letter-spacing: -0.6px;
+		}
+	}
+
+	/* 		Page 2 Cards
+	------------------------------------------- */
+
+	.hm-info .q-checkbox .chck-wrap {
+		bottom: 10px;
+	}
+
+	/* 		Page 3 Preliminary Page
+	------------------------------------------- */
+	.prelim {
+		.active-crd {
+			margin: 0;
+			padding: 20px;
+		}
+		.rt-info {
+			margin: 40px 15px;
+		}
+		.lft-info {
+			margin: 40px 15px;
+		}
+		.price {
+			font-size: 116px;
+		}
+	}
+}
+
+@media screen and (max-width: 840px) and (min-width: 768px) {
+	.hm-info {
+		.question-full,
+		.question {
+			h4 {
+				font-size: 20px !important;
+				line-height: 1.2;
+				letter-spacing: -0.6px;
+			}
+		}
+	}
+
+	.hm-info .q-checkbox .chck-wrap {
+		bottom: 10px;
+	}
+
+	.field-container {
+		padding: 0 13px;	
+	}
+	.mr-q-cnt {
+		margin-top: 60px;
+	}
+
+	/* 		Page 3 Preliminary Page
+	------------------------------------------- */
+	.prelim-hd {
+		h2 {
+			font-size: 36px;
+			color: #FFFFFF;
+			letter-spacing: -1.45px;
+			line-height: 36px;
+		}
+		
+	}
+	.prelim {
+		.bk-crd,
+		.bk-crd-wrap {
+			// width: 720px;
+		}
+		.active-crd {
+			margin: 0;
+			padding: 20px;
+		}
+		.rt-info {
+			margin: 40px 20px;
+		}
+		.lft-info {
+			margin: 40px 20px;
+		}
+		.price {
+			font-size: 116px;
+		}
+	}
+	
+
+}

@@ -12,167 +12,362 @@
 	<link rel="stylesheet" href="css/getmdl-select.css">
 	<!-- Gridpak -->
 	<link rel="stylesheet" href="css/gridpak.css">
+	<!-- liveaddressGridpak -->
+	<link rel="stylesheet" href="css/liveaddress.css">
+	<!-- Animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<style>
+
+	#pagecontainer {
+		height: 100%;
+		transition: height 0.4s ease-out;
+		position:relative;
+		overflow: hidden
+  }
+
+	.landing .landing-page {
+		display:block;
+	}
+
+	.landing-page {
+		opacity: 0;
+		transition: opacity 0.4s ease-out;
+    	position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    right: 0px;
+	    display: none;
+	    z-index: 4;
+	}
+
+	.page {
+		position: absolute;
+		opacity: 0;
+		transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+		height: inherit;
+		overflow: hidden;
+		top:0px;
+		box-sizing: border-box;
+		transition-delay: 0s;
+		z-index: 3;
+		width: 100%;
+		overflow-x:hidden;
+		overflow-y: scroll;
+		pointer-events: none;
+	}
+
+	.page-innner-container {
+		min-height:600px;
+		padding-top: 100px;
+	}
+	@media screen and (max-width: 600px) {
+		.page-innner-container {
+			padding-top: 20px;
+		}
+		.page {
+			width:105%;
+		}
+	}
+
+	.page::-webkit-scrollbar{
+		z-index: 20;
+	}
+
+	.page.back {
+		transform: translate3d(-110%,0,0);
+	}
+
+	.page.forward {
+		transform: translate3d(110%,0,0);
+	}
+
+	.page.active, .landing-page.active {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+		transition-delay: 0.1s;
+		pointer-events: auto;
+	}
+
+	.bk-btn, .next-page-bar {
+		transition: opacity 0.5s ease-out;
+		opacity: 1;
+	}
+	.invisible {
+		opacity: 0;
+	}
+	</style>
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/css/input.css">
 </head>
-<body data-ng-app="myHippoPublicData" data-ng-controller="PublicDataController" data-ng-class="{'percent-50':publicDataData.submitted}">
-	<div class="container">
-		<div class="row">
-			<nav class="col-lg-10">
-				<div class="nav-wrap col col-lg-1 col-md-1">
+<body data-ng-app="hippo" data-ng-controller="pageController" class="percent-{{pages[activePage].percent}} body-wrapper" ng-class="{'percent-purple':purple, 'landing':activePage < 0, 'model-open':activeModalShowing}">
+	<div style="position:absolute;top:0;right:0;left:0;bottom:0;">
+		<!-- Nav Bar -->
+		<div class="nav-back"></div>
+		<nav class="">
+			<div class="nav-wrap col col-lg-10 col-md-8 col-sm-8 col-xs-4">
+				<div class="logo">
+					<img src="img/logo.svg" alt="Hippo Logo">
+				</div>
+				<div class="chat">
+					<span>CHAT</span>
+					<img src="img/chat.svg" alt="Chat">
+				</div>
+			</div>
+		</nav>
+		<!-- End Nav Bar -->
+		<div class="progress-bar invisible" ng-class="{'invisible':activePage == -1}">
+			<nav class="">
+				<div class="nav-wrap col col-lg-10 col-md-8 col-sm-8 col-xs-4">
 					<div class="logo">
-						<img src="img/logo.svg" alt="Hippo Logo">
+						<img src="img/wht-logo.svg" alt="Hippo Logo">
 					</div>
-					<div class="chat col-lg-offset-9 col-md-offset-7 col-sm-offset-7 col-xs-offset-3">
+					<div class="chat">
 						<span>CHAT</span>
-						<img src="img/chat.svg" alt="Chat">
+						<img src="img/wht-chat.svg" alt="Chat">
 					</div>
 				</div>
 			</nav>
-			<div class="heading col-lg-10 col-md-8 col-sm-8 col-cs-4">
-				<h2>Can you confirm this information?</h2>
-			</div>
-			<div class="input-wrap col-lg-offset-1 col-sm-offset-1 col-lg-8 col-md-8 col-sm-8 col-xs-4">
-				<form name="publicDataForm" action="#" class="row">
-					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-						 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
-						 	<span><i class="material-icons filled">done</i></span>
-						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="yr-built" placeholder="YYYY" data-ng-model="publicDataData.form.yearBuilt">
-						    <label class="mdl-textfield__label" for="yr-built">YEAR BUILT</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
-						  </div>
+		</div>
+
+		<div class="landing-page" ng-class="{'active':activePage == -1}">
+			<div class="section-wrapper">
+				<div class="section">
+					<div class="internalPage first-page">
+						<div class="title">
+							Modern home insurance in minutes. <br/> No phone calls required.
+						</div>
+						<div class="form">
+							<div liveaddress token="22806898265935130" ng-model="address" input-class="inputbox" input-placeholder="Start with your address"></div>
+						</div>
+
+						<div class="selectors-list">
+							<ul>
+								<li ng-class="{'selected':product==='home'}" ng-click="product='home';">Home</li>
+								<li ng-class="{'selected':product==='condo'}" ng-click="product='condo';">Condo</li>
+								<li ng-class="{'selected':product==='renters'}" ng-click="product='renters';">Renters</li>
+								<li ng-class="{'selected':product==='earthquake'}" ng-click="product='earthquake';">Earthquake</li>
+							</ul>
+						</div>
+
+						<div class="mdl-button mdl-js-button mdl-js-ripple-effect button" ng-click="startNewLead();" style="width: 191px; height: 44px; font-size: 14px; line-height: 44px; font-family: 'MarkOT-Bold'; letter-spacing: 0px;" ng-disabled="address == false"> 
+							GET A QUOTE
+						</div>
 					</div>
-					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">  
-						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
-						 	<span><i class="material-icons filled">done</i></span>
-						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sq-ft" placeholder="sq ft" data-ng-model="publicDataData.form.squareFootage">
-						    <label class="mdl-textfield__label" for="sq-ft">SQUARE FOOTAGE</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
-						  </div>
-				  	</div>
-				  	<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-					  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-									 	<span><i class="material-icons filled">done</i></span>
-				            <input class="mdl-textfield__input" type="text" id="units" placeholder="Select" readonly data-ng-model="publicDataData.form.familyUnits">
-				            <label for="units" class="mdl-textfield__label">FAMILY UNITS</label>
-				           	<div class="getmdl-select-container">
-					            <label for="units">
-					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-					            </label>
-					            <ul for="units" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-					                <li class="mdl-menu__item">Germany</li>
-					                <li class="mdl-menu__item">Belarus</li>
-					                <li class="mdl-menu__item">Russia</li>
-					            </ul>
-				            </div>
-				        </div>
-			        </div>
-			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
-						 			<span><i class="material-icons filled">done</i></span>
-						 			<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
-						    	<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="stories" placeholder="0" data-ng-model="publicDataData.form.stories">
-						    	<label class="mdl-textfield__label" for="stories">STORIES</label>
-						    	<span class="mdl-textfield__error">Input is not a number!</span>
-					  	</div>
-				  	</div>
-					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-									 	<span><i class="material-icons filled">done</i></span>
-				            <input class="mdl-textfield__input" type="text" id="pool" placeholder="Select" readonly>
-				            <label for="pool" class="mdl-textfield__label">SWIMMING POOL</label>
-				            <div class="getmdl-select-container">
-					            <label for="pool">
-					                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-					            </label>
-					            <ul for="pool" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-					                <li class="mdl-menu__item">YES</li>
-					                <li class="mdl-menu__item">NO</li>
-					            </ul>
-				            </div>
-				        </div>
-			        </div>
-			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="electric" placeholder="Select" readonly tabIndex="-1">
-				            <label for="electric">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="electric" class="mdl-textfield__label">ELECTRIC UPDATED</label>
-				            <ul for="electric" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
-				        </div>
-			        </div>
-			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="hvac" placeholder="Select" readonly tabIndex="-1">
-				            <label for="hvac">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="hvac" class="mdl-textfield__label">HEATING/HVAC UPDATED</label>
-				            <ul for="hvac" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
-				        </div>
-			        </div>
-			        <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="plumbing" placeholder="Select" readonly tabIndex="-1">
-				            <label for="plumbing">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="plumbing" class="mdl-textfield__label">PLUMBING UPDATED</label>
-				            <ul for="plumbing" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
-				        </div>
-			        </div>
-					<div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select text-input">
-				            <input class="mdl-textfield__input" type="text" id="roof" placeholder="Select" readonly tabIndex="-1">
-				            <label for="roof">
-				                <i class="mdl-icon-toggle__label material-icons">arrow_drop_down</i>
-				            </label>
-				            <label for="roof" class="mdl-textfield__label">ROOF TYPE</label>
-				            <ul for="roof" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-				                <li class="mdl-menu__item">YES</li>
-				                <li class="mdl-menu__item">NO</li>
-				            </ul>
-				        </div>
-				    </div>
-				    <div class="col col-lg-2 col-md-2 col-sm-3 col-xs-4">
-				        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label text-input">
-						 	<span><i class="material-icons filled">done</i></span>
-						 	<span class="wrong-info"><img src="img/wrong-input.svg" alt="wrong"></span>
-						    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="roof-maintained" placeholder="YYYY">
-						    <label class="mdl-textfield__label" for="roof-maintained">ROOF LAST MAINTAINED</label>
-						    <span class="mdl-textfield__error">Input is not a number!</span>
-					  	</div>
-				  	</div>
-				</form>
-				
+				</div>
+
+				<div class="section">
+					<div class="internalPage">
+					<div class="zeppelin"></div>
+						<div class="eyebrow one">What is Hippo?</div>
+						<div class="title internal one">
+							Simpler Sign-up
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, te ipsum facete mnesarchum mea, ius utroque temporibus an. Eum antiopam instructior vituperatoribus at, no populo scripta mea.
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="internalPage">
+					<div class="chopper-container-1">
+						<div class="chopper"></div>
+						<img class="lights" src="img/chopper-lights.png" />
+					</div>
+
+					<div class="chopper-container-2">
+						<div class="chopper"></div>
+						<img class="lights" src="img/chopper-lights.png" />
+					</div>
+						<div class="eyebrow two">What is Hippo?</div>
+						<div class="title internal two">
+							Comprehendable <br> Coverage
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, te ipsum facete mnesarchum mea, ius utroque temporibus an. Eum antiopam instructior vituperatoribus at, no populo scripta mea.
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="internalPage">
+						<div class="balloon-1"></div>
+						<div class="balloon-2"></div>
+						<div class="balloon-3"></div>
+						<div class="eyebrow three">What is Hippo?</div>
+						<div class="title internal three">
+							Personal Property
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, te ipsum facete mnesarchum mea, ius utroque temporibus an. Eum antiopam instructior vituperatoribus at, no populo scripta mea.
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="internalPage">
+						<div class="eyebrow four">What is Hippo?</div>
+						<div class="title internal four">
+							Smarter Service
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, te ipsum facete mnesarchum mea, ius utroque temporibus an. Eum antiopam instructior vituperatoribus at, no populo scripta mea.
+						</div>
+						<div class="clouds-container">
+							<div class="clouds-1"></div>
+							<div class="clouds-2"></div>
+							<div class="rain-1"></div>
+							<div class="rain-2"></div>
+							<div class="rays"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="internalPage final-pages">
+						<div class="eyebrow five">What others are saying</div>
+						<div class="title internal five">
+							"Hippo has completely disrupted the home<br> insurance industry by focusing on what<br> matters most:  a simple, transparent<br>process made with the user in mind."
+						</div>
+						<div class="description">
+							<img src="img/news-logos.png" width="597" height="160" />
+						</div>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="internalPage final-pages">
+						<div class="eyebrow five">What is Hippo?</div>
+						<div class="title internal six">
+							Trust Lorem ipsum
+						</div>
+						<div class="description">
+						Lorem ipsum dolor sit amet, te ipsum facete mnesarchum mea, ius utroque temporibus an. Eum antiopam instructior vituperatoribus at, no populo scripta mea. <br><br>
+							<img src="img/security-logos.png" width="715" height="74" />
+						</div>
+					</div>
+				</div>
+
+
+				<div class="section">
+					<div class="internalPage last-page">
+							<div class="form">
+								<div liveaddress token="22806898265935130" ng-model="address" input-class="inputbox" input-placeholder="Start with your address"></div>
+							</div>
+
+							<div class="selectors-list">
+								<ul>
+									<li ng-class="{'selected':product==='home'}" ng-click="product='home';">Home</li>
+									<li ng-class="{'selected':product==='condo'}" ng-click="product='condo';">Condo</li>
+									<li ng-class="{'selected':product==='renters'}" ng-click="product='renters';">Renters</li>
+									<li ng-class="{'selected':product==='earthquake'}" ng-click="product='earthquake';">Earthquake</li>
+								</ul>
+							</div>
+
+							<div class="mdl-button mdl-js-button mdl-js-ripple-effect button" ng-click="startNewLead();" style="width: 191px; height: 44px;"> 
+								GET A QUOTE
+							</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="continue-btn" data-ng-disabled="!isValid()" disabled="true">
-					<button class="" data-ng-click="printModel();">
-						Continue
-					</button>
+
+		<div class="city-illustration" ng-class="{'landing':activePage == -1}"></div>
+
+		<div class="next-page-bar" ng-class="{'invisible':activePage != -1}">
+			<div class="arrow-down"></div>
+			<div class="footer" style="height:311px; width:1367px; background-color:#044866;">
+			</div>
+		</div>
+
+		<div id="pagecontainer">
+			<div ng-repeat="page in pages" class="page" ng-class="{'active':$index == activePage, 'back':$index < activePage, 'forward':$index > activePage, 'purple':page.purple}">
+				<div id="page-container-{{page.key}}" class="page-innner-container">
+					<mh-page ng-if="page.type == 'fields' || page.type == 'questions' || page.type == 'tiles'">
+					</mh-page>
+					<mh-prelim ng-if="page.type == 'prelim'"></mh-prelim>
+					<mh-claims ng-if="page.type == 'claims'"></mh-claims>
+					<mh-finalquote ng-if="page.type == 'finalquote'"></mh-finalquote>
+					<mh-checkout ng-if="page.type == 'checkout'"></mh-checkout>
+					<mh-confirmation ng-if="page.type == 'confirmation'"></mh-confirmation>
+					<div ng-if="page.type == 'basic'">
+						<div class="container">
+							<div class="row">
+							  <!-- Heading Section -->
+							  <div class="heading col-lg-10 col-md-8 col-sm-8 col-cs-4">
+							    <h2>{{page.title}}</h2>
+							  </div>
+							  <!-- End Heading Section -->
+							  <div style="background-color:white; border-radius:5px; width:600px; height:400px; animation-delay:2.5s;" class="animated bounceInUp" ng-class="{'animated':animate}"></div>
+
+								  <!-- Continue Button -->
+								  <div class="continue-btn col col-xs-4" >
+								    <button class="mdl-button mdl-js-button mdl-js-ripple-effect" data-ng-click="next();">
+								      Continue
+								    </button>
+								  </div>
+								  <!-- End Continue Button -->
+							 </div>
+						</div>
+					</div>
 				</div>
+			</div>
+			<!-- End Row -->
+
+			<!-- Back Button -->
+			<button class="bk-btn mdl-button mdl-js-button mdl-js-ripple-effect invisible" data-ng-click="back();" ng-class="{'invisible':activePage == -1}"><img class="back-btn" src="img/back.svg" alt="Back Button"><img class="back-btn-p" src="img/back-p.svg" alt="Back Button" style="display: none;"></span></button>
+		  <!-- End Back Button -->
+
+		  <div style="clear:both"></div>
+		</div>
+		<!-- End Container -->
 	</div>
 
+	<div class="modal fade" ng-class="{'in':activeModalShowing, 'inactive':!activeModal}">
+		<div class="modal-dialog col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-4" ng-if="activeModal">
+			<div class="modal-content">
+				<div class="modal-close" ng-click="hideModal()"><img class="white-close" src="img/modal-close.svg" alt="Close Modal"><img class="black-close" src="img/modal-close-black.svg" alt="Close Modal"></div>
+				<div class="modal-title-wrap row" ng-class="{'hr':activeModal.hr}">
+					<div class="modal-icon col col-lg-6 col-md-6">
+						<img src="img/calender.svg" alt="">
+					</div>
+					<h1 class="modal-title col col-lg-6 col-md-6">{{activeModal.title}}</h1>
+					<p class="modal-sub-title col col-lg-6 col-md-6">{{activeModal.subTitle}}</p>
+				</div>
+				<div class="modal-info row" ng-if="activeModal.body">
+					<div ng-bind-html="activeModal.body"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-backdrop fade" ng-class="{'in':activeModalShowing, 'inactive':!activeModal}" ng-click="hideModal()"></div>
+
 	<!-- MDL JS -->
-	<script src="js/material.min.js" type="text/javascript"></script>
+	<script src="js/material.js" type="text/javascript"></script>
 	<!--getmdl-select-->
   <script src="js/getmdl-select.js" type="text/javascript"></script>
 	<!-- Angular JS -->
 	<script src="js/angular.js" type="text/javascript"></script>
+	<!-- Moment -->
+	<script src="js/moment.js" type="text/javascript"></script>
+	<!-- Humps -->
+	<script src="js/hump.js" type="text/javascript"></script>
+	<!-- lodash -->
+	<script src="js/lodash.js" type="text/javascript"></script>
+	<!-- liveAddress -->
+	<script src="js/liveaddress.js" type="text/javascript"></script>
 	<!-- Custom JS -->
+	<script src="js/pages.js" type="text/javascript"></script>
+	<script src="js/modals.js" type="text/javascript"></script>
 	<script src="js/app.js" type="text/javascript"></script>
+
+	<!-- Landing JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="landing/javascripts/libs/jquery.alton.js"></script>
+	<script type="text/javascript" src="landing/javascripts/libs/tween/plugins/ScrollToPlugin.js"></script>
+	<script type="text/javascript" src="landing/javascripts/libs/tween/TweenMax.js"></script>
+	<script type="text/javascript" src="landing/javascripts/main.js"></script>
+
 </body>
 </html>
